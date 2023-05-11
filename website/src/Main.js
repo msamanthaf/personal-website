@@ -6,9 +6,9 @@ const Web = () => {
 <header>
 <img src="Icon.png" alt="Logo" className="logo" />
   <nav className="header-nav">
-      <a href='#about' className="header-button">Profile</a>
-      <a href='#portfolio' className="header-button">Portfolio</a>
-      <a href='#contact' className="header-button">Contact</a>
+      <a href='#profile' className="profile">Profile</a>
+      <a href='#portfolio' className="portfolio">Portfolio</a>
+      <a href='#contact' className="portfolio">Contact</a>
   </nav>
 </header>
 
@@ -17,4 +17,3 @@ const Web = () => {
 }
 
 export default Web;
-
