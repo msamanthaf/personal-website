@@ -44,11 +44,27 @@ nav a {
   color: #908e98;
 }
 
-nav a:hover, nav a.profile{
+nav a:hover, nav a.active{
   color:#e0e0e0;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 body {
   background: #15131d;
+}
+
+section{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:#1f242d;
+  color:#ffffff;
+  font-size: 100px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+}
+
+section:nth-child(odd){
+  background: #768091;
 }
