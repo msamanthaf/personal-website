@@ -49,9 +49,25 @@ nav a {
   color: #908e98;
 }
 
-nav a:hover, nav a.active{
-  color:#e0e0e0;
+nav a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: #e0e0e0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+nav a:hover::after,
+nav a.active::after {
+  transform: scaleX(1);
+  width: 100%;
+}
+
+nav a.active {
   font-weight: 800;
+  transform: translateY(-2px);
 }
 
 body {
