@@ -16,11 +16,13 @@ const Web = () => {
 
 <section id="profile">
   <div class="text-box">
-    <p>Hey👋, I'm</p>
+    <p>Heyy👋 I'm</p>
     <h1>MARIE</h1> 
     <h2><h3>SAM</h3> ANTHA</h2>
-    <a href='#profile'>Explore What I Do <span>&#x27F6;</span></a>
-    <a href='#portfolio'>Connect With Me 🙌</a>
+  </div>
+  <div className="jump">
+      <a href='#portfolio' className="explore">Explore What I Do <span>&#x27F6;</span></a>
+      <a href='#contact' className="connect">Connect With Me 🙌</a>
   </div>
 </section>
 <section id="portfolio">Portfolio</section>

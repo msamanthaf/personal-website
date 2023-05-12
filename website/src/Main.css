@@ -22,7 +22,7 @@ header {
   z-index: 100;
   user-select: none;
   background-color: transparent;
-  transition: background-color 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .logo {
@@ -73,14 +73,18 @@ nav a.active {
 body {
   margin: 0;
   justify-content: left;
+  caret-color: transparent;
 }
 
 section{
+  align-items: center;
+  z-index: 100;
+  user-select: none;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background:#1f242d;
+  background:#1a224c;
   color:#ffffff;
   font-size: 100px;
   font-family: 'Poppins', sans-serif;
@@ -92,41 +96,171 @@ section:nth-child(odd){
 }
 
 .text-box{
-  margin-top: 8%;
-  margin-left: -50%;
+  margin-top: 15%;
 }
 
 .text-box p{
   font-family: 'Rubik', sans-serif;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 900;
-  margin-left: -50%;
+  margin-left: -212%;
+  margin-top: -30%;
+  margin-bottom: -10%;
 }
 
 .text-box h1{
   font-size: 70px;
   font-weight: 900;
   text-align: left;
+  margin-left: -70%;
 }
 
 .text-box h2{
-  font-size: 80px;
+  font-size: 70px;
   font-weight: bolder;
   display: flex;
   align-items: center;
   text-align: left;
-  margin-top: -30%;
-  margin-bottom: -10%;
+  margin-top: -40%;
+  margin-left: -70%;
+  margin-bottom: 0%;
 }
 
 .text-box h3 {
-  font-size: 80px;
+  font-size: 70px;
   color: transparent;
   -webkit-text-stroke: 1px white;
   background: url(back.png);
   -webkit-background-clip: text;
   background-position: 0 0;
   animation: back 20s linear infinite;
+}
+
+section#profile{
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(#0a0f27, #1a224c, #13365c);
+}
+
+.jump {
+  margin-top: 10%;
+  margin-left: -50%;
+  display: flex;
+  align-items: center;
+}
+
+.jump a {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 100;
+  padding: 10px 20px;
+  border: 2px solid white;
+  margin-left: 10%;
+  width: 210px;
+}
+
+.jump a:hover {
+  background-color: white;
+  color: #1a224c;
+}
+
+.jump a:hover span {
+  color: #1a224c;
+}
+
+.explore {
+  margin-left: 50%;
+}
+
+.connect {
+  margin-left: 50%;
+}
+
+
+@media screen and (max-width: 1000px) {
+  section {
+    font-size: 50px;
+    transition: .2s;
+  }
+
+  .text-box {
+    margin-left: 10%;
+    margin-top: 0%;
+  }
+
+  .text-box h1{
+    font-size: 60px;
+    margin-bottom: 20%;
+  }
+
+  .text-box h2, .text-box h3{
+    font-size: 60px;
+  }
+
+  .jump {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: left;
+    margin-top: 50px;
+  }
+  
+  .jump a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid white;
+  }
+  
+  .jump a:hover {
+    background-color: white;
+    color: #1a224c;
+  }
+  
+  .jump a:hover span {
+    color: #1a224c;
+  }
+  
+  .explore {
+    margin-right: -20%;
+  }
+  
+  .connect {
+    margin-left: -20%;
+  }  
+}
+
+@media screen and (max-width: 900px) {
+  section {
+    font-size: 40px;
+    transition: .2s;
+  }
+
+  .text-box {
+    margin-left: 20%;
+    margin-top: -5%;
+  }
+
+  .text-box a {
+    margin: 0%;
+  }
+
+  .text-box p{
+    font-size: 20px;
+  }
+
+  .text-box h1{
+    margin-top: -5%;
+    font-size: 50px;
+    padding: 10% 0%;
+  }
+
+  .text-box h2, .text-box h3{
+    font-size: 50px;
+  }
 }
 
 @keyframes back {
@@ -141,9 +275,9 @@ section:nth-child(odd){
   color: #ffffff;
   padding: 10px 20px;
   text-decoration: none;
-  margin-left: 30px;
   border:  2px solid white;
   align-items: center;
+  margin-left: -100%;
 }
 
 .text-box a span{
@@ -155,9 +289,9 @@ section:nth-child(odd){
 
 .text-box a:hover {
   background-color: white;
-  color: #1f242d;
+  color: #1a224c;
 }
 
 .text-box a:hover span {
-  color: #1f242d
+  color: #1a224c
 }
