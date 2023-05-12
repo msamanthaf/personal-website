@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;800;900&family=Rubik:wght@800&display=swap');
 
 *{
   scroll-behavior: smooth;
@@ -54,24 +54,25 @@ nav a::after {
   display: block;
   width: 0%;
   height: 2px;
-  background-color: #e0e0e0;
+  background-color: #ffffff;
   transform: scaleX(0);
   transition: transform 0.3s ease-in-out;
 }
 
 nav a:hover::after,
 nav a.active::after {
-  transform: scaleX(1);
+  transform: scaleX(0.8);
   width: 100%;
 }
 
 nav a.active {
-  font-weight: 800;
   transform: translateY(-2px);
+  color: #bbbac0;
 }
 
 body {
   margin: 0;
+  justify-content: left;
 }
 
 section{
@@ -88,4 +89,75 @@ section{
 
 section:nth-child(odd){
   background: #768091;
+}
+
+.text-box{
+  margin-top: 8%;
+  margin-left: -50%;
+}
+
+.text-box p{
+  font-family: 'Rubik', sans-serif;
+  font-size: 15px;
+  font-weight: 900;
+  margin-left: -50%;
+}
+
+.text-box h1{
+  font-size: 70px;
+  font-weight: 900;
+  text-align: left;
+}
+
+.text-box h2{
+  font-size: 80px;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-top: -30%;
+  margin-bottom: -10%;
+}
+
+.text-box h3 {
+  font-size: 80px;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  background: url(back.png);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+}
+
+@keyframes back {
+  100%{
+    background-position: 2000px 0;
+  }
+}
+
+.text-box a{
+  font-weight: 100;
+  font-size: 15px;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-left: 30px;
+  border:  2px solid white;
+  align-items: center;
+}
+
+.text-box a span{
+  font-size: 20px;
+  line-height: 10px;
+  margin-left: 5px;
+  color: white;
+}
+
+.text-box a:hover {
+  background-color: white;
+  color: #1f242d;
+}
+
+.text-box a:hover span {
+  color: #1f242d
 }
