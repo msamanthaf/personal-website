@@ -21,7 +21,7 @@ const Web = () => {
     <h2><h3>SAM</h3> ANTHA</h2>
   </div>
   <div className="jump">
-      <a href='#portfolio' className="explore">Explore What I Do <span>&#x27F6;</span></a>
+      <a href='#portfolio' className="explore">Explore My Projects <span>&#x27F6;</span></a>
       <a href='#contact' className="connect">Connect With Me 🙌</a>
   </div>
 </section>

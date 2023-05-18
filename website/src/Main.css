@@ -130,7 +130,7 @@ section:nth-child(odd){
   font-size: 70px;
   color: transparent;
   -webkit-text-stroke: 1px white;
-  background: url(back.png);
+  background: url(binarybg.png);
   -webkit-background-clip: text;
   background-position: 0 0;
   animation: back 20s linear infinite;
@@ -158,7 +158,7 @@ section#profile{
   padding: 10px 20px;
   border: 2px solid white;
   margin-left: 10%;
-  width: 210px;
+  width: 220px;
 }
 
 .jump a:hover {
