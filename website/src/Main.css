@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;800;900&family=Rubik:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;800;900&family=Rubik:wght@800&family=Sacramento&display=swap');
+
 
 *{
   scroll-behavior: smooth;
@@ -107,6 +108,16 @@ section:nth-child(odd){
   margin-bottom: -10%;
 }
 
+.text-box p2{
+  font-family: 'Sacramento', cursive;
+  position: absolute;
+  margin-left: 14%;
+  margin-top: 5%;
+  font-size: 30px;
+  font-weight: -10;
+  z-index: 10;
+}
+
 .text-box h1{
   font-size: 70px;
   font-weight: 900;
@@ -138,7 +149,7 @@ section:nth-child(odd){
 section#profile{
   display: flex;
   flex-direction: column;
-  background: linear-gradient(#0a0f27, #1a224c, #13365c);
+  background: linear-gradient(#19132F, #2C274D, #42406C);
 }
 
 .jump {
@@ -300,12 +311,12 @@ section#profile{
   margin-left: 50%;
   z-index: 9;
   display: block;
-  height: 200px;
+  height: 300px;
   width: 300px;
   background-color: transparent;
   transition: box-shadow 0.1s, transform 0.1s;
   border-radius: 20px;
-  background-image: url(Sampixel.png);
+  background-image: url(pixelsam.png);
   background-size: 100%;
   background-repeat: no-repeat;
 }
