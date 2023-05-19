@@ -6,7 +6,7 @@
 }
 
 .main {
-  text-align: center;
+  text-align: left;
   background-color: #403d50;
 }
 
@@ -99,19 +99,63 @@ section:nth-child(odd){
   margin-top: 15%;
 }
 
-.text-box p{
+.text-wrapper{
+  box-sizing: content-box;
+  background-color: transparent;
+  height: 30px;
+  display: flex;
+  border-radius: 8px;
+  margin-left: -70%;
+  margin-top: -20%;
+  margin-bottom: -10%;
+}
+
+.words{
+  overflow: hidden;
+}
+
+.word{
+  display: block;
+  height: 100%;
+  padding-left: 10px;
+  color: #ffffff;
+  animation: spin_words 6s infinite;
   font-family: 'Rubik', sans-serif;
   font-size: 20px;
   font-weight: 900;
-  margin-left: -212%;
-  margin-top: -30%;
-  margin-bottom: -10%;
+}
+
+@keyframes spin_words{
+  10%{
+      transform: translateY(-112%);
+  }
+  25%{
+      transform: translateY(-100%);
+  }
+  35%{
+      transform: translateY(-212%);
+  }
+  50%{
+      transform: translateY(-200%);
+  }
+  60%{
+      transform: translateY(-312%);
+  }
+  75%{
+      transform: translateY(-300%);
+  }
+  85%{
+      transform: translateY(-412%);
+  }
+  100%{
+      transform: translateY(-400%);
+  }
 }
 
 .text-box p2{
   font-family: 'Sacramento', cursive;
   position: absolute;
-  margin-left: 14%;
+  margin-left: 31%;
   margin-top: 5%;
   font-size: 30px;
   font-weight: -10;
@@ -149,7 +193,7 @@ section:nth-child(odd){
 section#profile{
   display: flex;
   flex-direction: column;
-  background: linear-gradient(#19132F, #2C274D, #42406C);
+  background: linear-gradient(#1b1530, #2C274D, #42406C);
 }
 
 .jump {

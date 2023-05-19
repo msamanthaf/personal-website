@@ -16,7 +16,15 @@ const Web = () => {
 <section id="profile">
   <div id="tilt"></div>
   <div class="text-box">
-    <p>Hello👋 It's</p>
+    <div class="text-wrapper">
+       <div class="words">
+           <span class="word">Hello👋 I'm</span>
+           <span class="word">Halo👋 Saya</span>
+           <span class="word">你 好👋 我 叫</span>
+           <span class="word">Hallo👋 Ich bin</span>
+           <span class="word">Hello👋 I'm</span>
+       </div>
+    </div>
     <h1>MARIE</h1> 
     <h2><h3>SAM</h3> ANTHA</h2>
     <p2>Digital sorcerer in the making</p2>
