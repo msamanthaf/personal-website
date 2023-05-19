@@ -298,11 +298,11 @@ section#profile{
 #tilt {
   position: absolute;
   margin-left: 50%;
-  z-index: 9999;
+  z-index: 9;
   display: block;
   height: 200px;
   width: 300px;
-  background-color: grey;
+  background-color: transparent;
   transition: box-shadow 0.1s, transform 0.1s;
   border-radius: 20px;
   background-image: url(Sampixel.png);

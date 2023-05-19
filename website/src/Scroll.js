@@ -15,7 +15,7 @@ function init() {
             links.classList.remove('active');
             document.querySelector('nav a[href*=' + id + ']').classList.add('active');
           });
-          if (top >= offset) {
+          if (id !== 'profile') {
             header.style.backgroundColor = "#0a0f27";
           } else {
             header.style.backgroundColor = "transparent";
