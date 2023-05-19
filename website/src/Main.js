@@ -1,6 +1,5 @@
 import './Main.css';
-import './Scroll.js';
-
+import './Scroll.js'
 
 const Web = () => {
   return (
@@ -15,6 +14,7 @@ const Web = () => {
 </header>
 
 <section id="profile">
+  <div id="tilt"></div>
   <div class="text-box">
     <p>Heyy👋 I'm</p>
     <h1>MARIE</h1> 

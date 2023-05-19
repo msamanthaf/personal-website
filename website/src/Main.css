@@ -21,7 +21,6 @@ header {
   align-items: center;
   z-index: 100;
   user-select: none;
-  background-color: transparent;
   transition: 0.5s ease-in-out;
 }
 
@@ -294,4 +293,24 @@ section#profile{
 
 .text-box a:hover span {
   color: #1a224c
+}
+
+#tilt {
+  position: absolute;
+  margin-left: 50%;
+  z-index: 9999;
+  display: block;
+  height: 200px;
+  width: 300px;
+  background-color: grey;
+  transition: box-shadow 0.1s, transform 0.1s;
+  border-radius: 20px;
+  background-image: url(Sampixel.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#tilt:hover {
+  box-shadow: 0px 0px 30px rgba(0,0,0, 0.3);
+  cursor: pointer;
 }
