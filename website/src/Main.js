@@ -14,7 +14,7 @@ const Web = () => {
 </header>
 
 <section id="profile">
-  <div id="tilt"></div>
+  <div id="tilt">
   <div class="text-box">
     <div class="text-wrapper">
        <div class="words">
@@ -27,7 +27,7 @@ const Web = () => {
     </div>
     <h1>MARIE</h1> 
     <h2><h3>SAM</h3> ANTHA</h2>
-    <p2>Digital sorcerer in the making</p2>
+  </div>
   </div>
   <div className="jump">
       <a href='#portfolio' className="explore">Explore My Projects <span>&#x27F6;</span></a>

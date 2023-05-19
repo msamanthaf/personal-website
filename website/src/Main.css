@@ -176,7 +176,7 @@ section:nth-child(odd){
   align-items: center;
   text-align: left;
   margin-top: -40%;
-  margin-left: -70%;
+  margin-left: 5%;
   margin-bottom: 0%;
 }
 
@@ -197,8 +197,8 @@ section#profile{
 }
 
 .jump {
-  margin-top: 10%;
-  margin-left: -50%;
+  margin-top: 40%;
+  margin-left: -5%;
   display: flex;
   align-items: center;
 }
@@ -352,7 +352,7 @@ section#profile{
 
 #tilt {
   position: absolute;
-  margin-left: 50%;
+  margin-left: 10%;
   z-index: 9;
   display: block;
   height: 300px;
@@ -361,11 +361,10 @@ section#profile{
   transition: box-shadow 0.1s, transform 0.1s;
   border-radius: 20px;
   background-image: url(pixelsam.png);
-  background-size: 100%;
+  background-size: 65%;
   background-repeat: no-repeat;
 }
 
 #tilt:hover {
-  box-shadow: 0px 0px 30px rgba(0,0,0, 0.3);
   cursor: pointer;
 }
