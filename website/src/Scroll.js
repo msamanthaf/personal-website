@@ -16,7 +16,7 @@ function init() {
             document.querySelector('nav a[href*=' + id + ']').classList.add('active');
           });
           if (id !== 'profile') {
-            header.style.backgroundColor = "#0a0f27";
+            header.style.backgroundColor = "#141d26";
           } else {
             header.style.backgroundColor = "transparent";
           }

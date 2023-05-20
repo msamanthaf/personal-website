@@ -5,7 +5,7 @@ const Web = () => {
   return (
 <div className="main">
 <header>
-<img src="Icon.png" alt="Logo" className="logo" />
+<a href='#profile'><img src="Icon.png" alt="Logo" className="logo" /></a>
   <nav className="header-nav">
       <a href='#profile' class="active">Profile</a>
       <a href='#portfolio'>Portfolio</a>
@@ -27,11 +27,16 @@ const Web = () => {
     </div>
     <h1>MARIE</h1> 
     <h2><h3>SAM</h3> ANTHA</h2>
+    <p2>Software Sorcerer In The Making</p2>
   </div>
   </div>
   <div className="jump">
       <a href='#portfolio' className="explore">Explore My Projects <span>&#x27F6;</span></a>
       <a href='#contact' className="connect">Connect With Me 🙌</a>
+  </div>
+  <div className='icons'>
+    <a href='https://www.linkedin.com/in/marie-samantha-fidelia-82a3151b0/'><img src="linkedin.png" className="linkedin" /></a>
+    <a href='https://github.com/msamanthaf'><img src="github.png" className="github" /></a>
   </div>
 </section>
 
