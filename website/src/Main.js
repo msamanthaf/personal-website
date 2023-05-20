@@ -20,7 +20,7 @@ const Web = () => {
        <div class="words">
            <span class="word">Hello👋 I'm</span>
            <span class="word">Halo👋 Saya</span>
-           <span class="word">你 好👋 我 叫</span>
+           <span class="word">你 好 呀👋 我 是</span>
            <span class="word">Hallo👋 Ich bin</span>
            <span class="word">Hello👋 I'm</span>
        </div>

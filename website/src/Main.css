@@ -201,6 +201,7 @@ section#profile{
   margin-left: -5%;
   display: flex;
   align-items: center;
+  position: absolute;
 }
 
 .jump a {
@@ -234,102 +235,18 @@ section#profile{
 
 .linkedin{
   position: absolute;
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   left: 20px;
   bottom: 60px
 }
 
 .github{
   position: absolute;
-  width: 32px;
-  height: 32px;
+  width: 31px;
+  height: 31px;
   left: 20px;
   bottom: 10px
-}
-
-@media screen and (max-width: 1000px) {
-  section {
-    font-size: 50px;
-    transition: .2s;
-  }
-
-  .text-box {
-    margin-left: 10%;
-    margin-top: 0%;
-  }
-
-  .text-box h1{
-    font-size: 60px;
-    margin-bottom: 20%;
-  }
-
-  .text-box h2, .text-box h3{
-    font-size: 60px;
-  }
-
-  .jump {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: left;
-    margin-top: 50px;
-  }
-  
-  .jump a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    border: 2px solid white;
-  }
-  
-  .jump a:hover {
-    background-color: white;
-    color: #1a224c;
-  }
-  
-  .jump a:hover span {
-    color: #1a224c;
-  }
-  
-  .explore {
-    margin-right: -20%;
-  }
-  
-  .connect {
-    margin-left: -20%;
-  }  
-}
-
-@media screen and (max-width: 900px) {
-  section {
-    font-size: 40px;
-    transition: .2s;
-  }
-
-  .text-box {
-    margin-left: 20%;
-    margin-top: -5%;
-  }
-
-  .text-box a {
-    margin: 0%;
-  }
-
-  .text-box p{
-    font-size: 20px;
-  }
-
-  .text-box h1{
-    margin-top: -5%;
-    font-size: 50px;
-    padding: 10% 0%;
-  }
-
-  .text-box h2, .text-box h3{
-    font-size: 50px;
-  }
 }
 
 @keyframes back {
@@ -401,4 +318,297 @@ section#profile{
 ::-webkit-scrollbar-thumb:hover{
   background:linear-gradient(transparent, #3a305e);
   border-radius: 6px;
+}
+
+@media screen and (max-width: 1100px) {
+  .jump {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: left;
+    margin-bottom: -10%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .jump {
+    margin-bottom: -15%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .jump {
+    margin-bottom: -20%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .jump {
+    margin-bottom: -25%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .jump {
+    margin-bottom: -30%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .jump {
+    width: 60%;
+    margin-bottom: -30%;
+  }
+
+  .jump a {
+    font-size: 10px;
+    margin-left: 10%;
+    width: 200px;
+  }
+
+  #tilt{
+    width: 40%;
+    height: 40%;
+  }
+
+  .word{
+    font-size: 15px;
+  }
+
+  .text-box h1,.text-box h2,.text-box h3{
+    font-size: 60px;
+  }
+
+  .text-box p2{
+    font-size: 27px;
+  }
+}
+
+@media screen and (max-width: 646px) {
+  .jump {
+    width: 70%;
+    margin-bottom: -40%;
+  }
+
+  .jump a {
+    font-size: 10px;
+    width: 200px;
+  }
+
+  .text-box p2{
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .jump {
+    width: 70%;
+    margin-bottom: -40%;
+  }
+
+  .jump a {
+    font-size: 10px;
+    width: 200px;
+  }
+
+  .text-box p2{
+    font-size: 24px;
+  }
+
+  .text-box h1,.text-box h2,.text-box h3{
+    font-size: 55px;
+  }
+
+  .github{
+    width: 16px;
+    height: 16px;
+    margin-bottom: 2%;
+  }
+
+  .linkedin{
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .text-box p2{
+    font-size: 20px;
+  }
+  .jump {
+    width: 80%;
+    margin-bottom: -50%;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .jump {
+    width: 80%;
+    margin-bottom: -60%;
+  }
+
+  .jump a {
+    font-size: 10px;
+    width: 200px;
+  }
+
+  .text-box p2{
+    font-size: 20px;
+  }
+
+  .text-box h1,.text-box h2,.text-box h3{
+    font-size: 50px;
+  }
+
+  .github{
+    width: 16px;
+    height: 16px;
+    margin-bottom: 2%;
+  }
+
+  .linkedin{
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .text-box h1,.text-box h2,.text-box h3{
+    font-size: 46px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .jump {
+    width: 90%;
+    margin-bottom: -70%;
+  }
+
+  .text-box p2{
+    font-size: 19px;
+  }
+
+  nav a {
+    font-size: 10px;
+  }
+
+  #tilt{
+    margin-left: 5%;
+  }
+
+}
+
+@media screen and (max-width: 460px) {
+  .text-box h1,.text-box h2,.text-box h3{
+    font-size: 40px;
+  }
+
+  .text-box p2{
+    font-size: 18px;
+  }
+
+  .jump{
+    margin-bottom: -30%;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .text-box h1,.text-box h2,.text-box h3{
+    font-size: 40px;
+  }
+
+  .text-box p2{
+    font-size: 16px;
+  }
+
+  .jump{
+    margin-bottom: -30%;
+    width: 90%;
+  }
+
+  .jump a{
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .jump{
+    margin-bottom: -35%;
+  }
+}
+
+@media screen and (max-width: 388px) {
+  .text-box h1,.text-box h2,.text-box h3{
+    font-size: 33px;
+  }
+
+  .text-box p2{
+    font-size: 15px;
+  }
+
+  .jump{
+    margin-bottom: -40%;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .text-box p2{
+    font-size: 14px;
+  }
+
+  #tilt{
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width: 355px) {
+  .jump{
+    margin-bottom: -40%;
+    width: 98%;
+  }
+}
+
+@media screen and (max-width: 344px) {
+  .jump{
+    width: 99%;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .jump{
+    width: 100%;
+    margin-left: -8%;
+  }
+
+  .text-box p2{
+    font-size: 12px;
+  }
+
+  .text-box h1,.text-box h2,.text-box h3{
+    font-size: 30px;
+  }
+
+  #tilt{
+    margin-left: 10%;
+  }
+}
+
+@media screen and (max-width: 344px) {
+  .jump{
+    width: 99%;
+  }
+}
+
+@media screen and (max-width: 338px) {
+  .jump{
+    width: 105%;
+    margin-left: -8%;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .jump{
+    width: 90%;
+    margin-left: -8%;
+  }
 }
