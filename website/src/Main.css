@@ -297,10 +297,6 @@ section#profile{
   background-repeat: no-repeat;
 }
 
-#tilt:hover {
-  cursor: pointer;
-}
-
 ::-webkit-scrollbar{
   width: 12px;
 }
@@ -326,30 +322,30 @@ section#profile{
     flex-direction: row;
     justify-content: space-between;
     align-items: left;
-    margin-bottom: -10%;
+    margin-bottom: -5%;
   }
 }
 @media screen and (max-width: 1000px) {
   .jump {
-    margin-bottom: -15%;
+    margin-bottom: -10%;
   }
 }
 
 @media screen and (max-width: 900px) {
   .jump {
-    margin-bottom: -20%;
+    margin-bottom: -15%;
   }
 }
 
 @media screen and (max-width: 800px) {
   .jump {
-    margin-bottom: -25%;
+    margin-bottom: -20%;
   }
 }
 
 @media screen and (max-width: 700px) {
   .jump {
-    margin-bottom: -30%;
+    margin-bottom: -25%;
   }
 }
 
@@ -443,7 +439,7 @@ section#profile{
 @media screen and (max-width: 545px) {
   .jump {
     width: 80%;
-    margin-bottom: -60%;
+    margin-bottom: -50%;
   }
 
   .jump a {
