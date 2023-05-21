@@ -154,9 +154,10 @@ section:nth-child(odd){
 }
 
 .desc p2{
-  font-family: 'Sacramento', cursive;
+  font-family: 'Poppins', sans-serif;
   top: 72%;
-  font-size: 30px;
+  font-size: 20px;
+  font-weight: 100;
   font-weight: -10;
   z-index: 10;
 }
@@ -193,6 +194,7 @@ section:nth-child(odd){
   color: transparent;
   -webkit-text-stroke: 1px white;
   background: url(binarybg.png);
+  background-size: contain;
   -webkit-background-clip: text;
   background-position: 0 0;
   animation: back 20s linear infinite;
@@ -260,7 +262,7 @@ section#profile{
 
 @keyframes back {
   100%{
-    background-position: 2000px 50px;
+    background-position: 0px 1000px;
   }
 }
 
@@ -387,7 +389,7 @@ section#profile{
   }
 
   .desc p2{
-    font-size: 27px;
+    font-size: 18px;
   }
 }
 
@@ -403,7 +405,7 @@ section#profile{
   }
 
   .desc p2{
-    font-size: 25px;
+    font-size: 17px;
   }
 }
 
@@ -419,7 +421,7 @@ section#profile{
   }
 
   .desc p2{
-    font-size: 24px;
+    font-size: 16px;
   }
 
   .text-box h1,.text-box h2,.text-box h3{
@@ -460,7 +462,7 @@ section#profile{
   }
 
   .desc p2{
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .text-box h1,.text-box h2,.text-box h3{
@@ -511,7 +513,7 @@ section#profile{
   }
 
   .text-box p2{
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .jump{
@@ -591,7 +593,7 @@ section#profile{
   }
 
   .text-box p2{
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .text-box h1,.text-box h2,.text-box h3{
