@@ -153,14 +153,21 @@ section:nth-child(odd){
   }
 }
 
-.text-box p2{
+.desc p2{
   font-family: 'Sacramento', cursive;
-  position: absolute;
-  margin-left: -30%;
-  margin-top: -10%;
+  top: 72%;
   font-size: 30px;
   font-weight: -10;
   z-index: 10;
+}
+
+.desc {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  text-align: center;
 }
 
 .text-box h1{
@@ -199,7 +206,7 @@ section#profile{
 }
 
 .jump {
-  margin-top: 40%;
+  margin-top: 35%;
   margin-left: -5%;
   display: flex;
   align-items: center;
@@ -379,7 +386,7 @@ section#profile{
     font-size: 60px;
   }
 
-  .text-box p2{
+  .desc p2{
     font-size: 27px;
   }
 }
@@ -395,7 +402,7 @@ section#profile{
     width: 200px;
   }
 
-  .text-box p2{
+  .desc p2{
     font-size: 25px;
   }
 }
@@ -411,7 +418,7 @@ section#profile{
     width: 200px;
   }
 
-  .text-box p2{
+  .desc p2{
     font-size: 24px;
   }
 
@@ -432,7 +439,7 @@ section#profile{
 }
 
 @media screen and (max-width: 575px) {
-  .text-box p2{
+  .desc p2{
     font-size: 20px;
   }
   .jump {
@@ -452,7 +459,7 @@ section#profile{
     width: 200px;
   }
 
-  .text-box p2{
+  .desc p2{
     font-size: 20px;
   }
 

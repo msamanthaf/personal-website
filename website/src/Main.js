@@ -27,9 +27,9 @@ const Web = () => {
     </div>
     <h1>MARIE</h1> 
     <h2><h3>SAM</h3> ANTHA</h2>
-    <p2>Software Sorcerer In The Making</p2>
   </div>
   </div>
+  <div class="desc"><p2>Software Sorcerer In The Making</p2></div>
   <div className="jump">
       <a href='#portfolio' className="explore">Explore My Projects <span>&#x27F6;</span></a>
       <a href='#contact' className="connect">Connect With Me 🙌</a>
