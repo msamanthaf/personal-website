@@ -1,6 +1,6 @@
 {
   "name": "website",
-  "homepage": "https://msamanthaf.github.io/personal_website",
+  "homepage": "http://msamanthaf.github.io/personal_website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

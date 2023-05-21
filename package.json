@@ -1,7 +1,9 @@
 {
   "dependencies": {
-    "gh-pages": "^5.0.0",
     "gsap": "^3.11.5",
     "jquery": "^3.7.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
