@@ -195,6 +195,7 @@ section#profile{
   display: flex;
   flex-direction: column;
   background: linear-gradient(#141d26, #353C51);
+  height: 100vh;
 }
 
 .jump {
