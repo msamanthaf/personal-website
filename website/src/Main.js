@@ -38,7 +38,7 @@ const Web = () => {
       </div>
     </div>
   </div>
-  <div className='icons'>
+  <div id='icons'>
     <a href='https://drive.google.com/file/d/18LWYla920C4FaV_P4nnHr5-viNb-3aoT/view?usp=sharing'><img src="resumeicon.png" className="resume" /></a>
     <a href='https://www.linkedin.com/in/marie-samantha-fidelia-82a3151b0/'><img src="linkedin.png" className="linkedin" /></a>
     <a href='https://github.com/msamanthaf'><img src="github.png" className="github" /></a>

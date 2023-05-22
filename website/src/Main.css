@@ -272,24 +272,24 @@ section#contact{
 
 .resume{
   position: absolute;
-  width: 33px;
-  height: 31px;
+  width: 28px;
+  height: 26px;
   left: 18px;
   bottom: 90px
 }
 
 .linkedin{
   position: absolute;
-  width: 28px;
-  height: 28px;
+  width: 23px;
+  height: 23px;
   left: 20px;
   bottom: 50px
 }
 
 .github{
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   left: 19px;
   bottom: 10px
 }
@@ -518,7 +518,7 @@ section#contact{
   .github{
     width: 18px;
     height: 18px;
-    margin-bottom: 2%;
+    margin-bottom: 1.7%;
   }
 
   .linkedin{
@@ -604,7 +604,7 @@ section#contact{
 
 .github{
   left: 56%;
-  bottom: 7%;
+  bottom: 6.9%;
 }
 
 .linkedin{
@@ -652,15 +652,7 @@ section#contact{
   }
 
   .github{
-    bottom: 7.2%;
-  }
-  
-  .linkedin{
-    bottom: 8.5%;
-  }
-  
-  .resume{
-    bottom: 9.7%;
+    bottom: 7.1%;
   }
 }
 
@@ -669,8 +661,8 @@ section#contact{
     margin-bottom: -40%;
   }
 
-   .github{
-    bottom: 7.3%;
+  .resume{
+    margin-bottom: -2.5%;
   }
 }
 
@@ -701,5 +693,13 @@ section#contact{
 @media screen and (max-width: 325px) {
   .jump{
     margin-left: -8%;
+  }
+
+  .github{
+    margin-bottom: 2.1%;
+  }
+
+  .resume{
+    margin-bottom: -2.5%;
   }
 }
