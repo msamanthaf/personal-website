@@ -404,8 +404,8 @@ section#profile{
 
 @media screen and (max-width: 680px) {
   .jump {
+    margin-left: -3%;
     width: 60%;
-    margin-bottom: -30%;
   }
 
   .jump a {
