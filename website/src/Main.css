@@ -28,6 +28,9 @@ header {
 body{
   width: 100%;
   overflow-x: hidden;
+  margin: 0;
+  justify-content: left;
+  caret-color: transparent;
 }
 
 .logo {
@@ -73,12 +76,6 @@ nav a.active::after {
 nav a.active {
   transform: translateY(-2px);
   color: #bbbac0;
-}
-
-body {
-  margin: 0;
-  justify-content: left;
-  caret-color: transparent;
 }
 
 section{
@@ -213,7 +210,7 @@ section#profile{
   display: flex;
   flex-direction: column;
   background: linear-gradient(#141d26, #353C51);
-  height: 100vh;
+  height: 100%;
 }
 
 .jump {
@@ -320,7 +317,7 @@ section#profile{
 }
 
 ::-webkit-scrollbar{
-  width: 12px;
+  color: transparent;
 }
 
 ::-webkit-scrollbar-track {
