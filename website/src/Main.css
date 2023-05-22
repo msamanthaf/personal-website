@@ -25,6 +25,11 @@ header {
   transition: 0.5s ease-in-out;
 }
 
+body{
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .logo {
   margin-left: 40%;
   margin-top: 20px;
@@ -167,8 +172,12 @@ section:nth-child(odd){
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100vw;
+  width: 100%;
   text-align: center;
+}
+
+.text-box{
+  width: 100%;
 }
 
 .text-box h1{
@@ -215,7 +224,6 @@ section#profile{
   display: flex;
   align-items: center;
   left: 50%;
-  margin-top: -2%;
 }
 
 .jump a {
@@ -305,8 +313,7 @@ section#profile{
   height: 300px;
   width: 300px;
   background-color: transparent;
-  transition: box-shadow 0.1s, transform 0.1s;
-  border-radius: 20px;
+  border-radius: 0px;
   background-image: url(pixelsam.png);
   background-size: 65%;
   background-repeat: no-repeat;
@@ -530,7 +537,6 @@ section#profile{
 
   .jump{
     margin-left: -5%;
-    width: 100%;
   }
 }
 
@@ -543,10 +549,6 @@ section#profile{
     margin-top: -10%;
     margin-bottom: 10%;
   }
-
-  .jump{
-    width: 100%;
-  }
 }
 
 @media screen and (max-width: 388px) {
@@ -556,7 +558,6 @@ section#profile{
 
   .jump{
     margin-bottom: -40%;
-    width: 100%;
   }
 }
 
@@ -573,19 +574,11 @@ section#profile{
 @media screen and (max-width: 355px) {
   .jump{
     margin-bottom: -40%;
-    width: 98%;
-  }
-}
-
-@media screen and (max-width: 344px) {
-  .jump{
-    width: 100%;
   }
 }
 
 @media screen and (max-width: 340px) {
   .jump{
-    width: 100%;
     margin-left: -8%;
   }
 
@@ -602,22 +595,14 @@ section#profile{
   }
 }
 
-@media screen and (max-width: 344px) {
-  .jump{
-    width: 100%;
-  }
-}
-
 @media screen and (max-width: 338px) {
   .jump{
-    width: 90%;
     margin-left: -8%;
   }
 }
 
 @media screen and (max-width: 325px) {
   .jump{
-    width: 90%;
     margin-left: -8%;
   }
 }
