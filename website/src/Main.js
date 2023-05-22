@@ -29,10 +29,12 @@ const Web = () => {
     <h2><h3>SAM</h3> ANTHA</h2>
   </div>
   </div>
-  <div class="desc"><p2>Software Sorcerer In The Making</p2></div>
-  <div className="jump">
+  <div class="desc">
+    <p2>Software Sorcerer In The Making</p2>
+    <div className="jump">
       <a href='#portfolio' className="explore">Explore My Projects <span>&#x27F6;</span></a>
       <a href='#contact' className="connect">Connect With Me 🙌</a>
+    </div>
   </div>
   <div className='icons'>
     <a href='https://www.linkedin.com/in/marie-samantha-fidelia-82a3151b0/'><img src="linkedin.png" className="linkedin" /></a>
