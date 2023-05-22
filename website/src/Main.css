@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;800;900&family=Rubik:wght@800&family=Sacramento&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;800;900&family=Rubik:wght@800&family=Sacramento&family=Source+Code+Pro:wght@300&display=swap');
 
 *{
   scroll-behavior: smooth;
+  cursor: url('../images/pixelcursor.png');
 }
 
 .main {
   text-align: left;
-  background-color: #403d50;
 }
 
 header {
@@ -31,6 +30,7 @@ body{
   margin: 0;
   justify-content: left;
   caret-color: transparent;
+  cursor: url('../images/pixelcursor.png'), auto;
 }
 
 .logo {
@@ -93,10 +93,6 @@ section{
   font-weight: 800;
 }
 
-section:nth-child(odd){
-  background: #768091;
-}
-
 .text-box{
   margin-top: 15%;
 }
@@ -156,7 +152,7 @@ section:nth-child(odd){
 }
 
 .desc p2{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Source Code Pro', monospace;
   top: 72%;
   font-size: 20px;
   font-weight: 100;
@@ -199,7 +195,7 @@ section:nth-child(odd){
   font-size: 70px;
   color: transparent;
   -webkit-text-stroke: 1px white;
-  background: url(binarybg.png);
+  background: url('../images/binarybg.png');
   background-size: contain;
   -webkit-background-clip: text;
   background-position: 0 0;
@@ -210,7 +206,15 @@ section#profile{
   display: flex;
   flex-direction: column;
   background: linear-gradient(#141d26, #353C51);
-  height: 100%;
+  height: fit-content;
+}
+
+section#portfolio{
+  background: linear-gradient(#353C51, #2b3c4e);
+}
+
+section#contact{
+  background: linear-gradient(#2b3c4e, #2b3c4e);
 }
 
 .jump {
@@ -311,9 +315,34 @@ section#profile{
   width: 300px;
   background-color: transparent;
   border-radius: 0px;
-  background-image: url(pixelsam.png);
+  background-image: url('../images/pixelsam.png');
   background-size: 65%;
   background-repeat: no-repeat;
+  animation: fade-in-up 1s timing-function 0.5s iteration-count direction forwards;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.subheading{
+  top: 0;
+  margin-top: -40%;
+}
+
+.subheading p3{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  font-weight: -10;
+  z-index: 10;
 }
 
 ::-webkit-scrollbar{
@@ -326,12 +355,12 @@ section#profile{
 }
 
 ::-webkit-scrollbar-thumb{
-  background:linear-gradient(transparent, #54487e);
+  background:linear-gradient(transparent, #a0b9d2, #3b5167);
   border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb:hover{
-  background:linear-gradient(transparent, #3a305e);
+  background:linear-gradient(transparent, #859eb6, #2b3c4e);
   border-radius: 6px;
 }
 

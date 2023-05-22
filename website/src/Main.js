@@ -5,7 +5,7 @@ const Web = () => {
   return (
 <div className="main">
 <header>
-<a href='#profile'><img src="Icon.png" alt="Logo" className="logo" /></a>
+<a href='#profile'><img src="Icon.png" className="logo" /></a>
   <nav className="header-nav">
       <a href='#profile' class="active">Profile</a>
       <a href='#portfolio'>Portfolio</a>
@@ -30,7 +30,7 @@ const Web = () => {
   </div>
   </div>
   <div class="desc">
-    <p2>Software Sorcerer In The Making</p2>
+    <p2>&lt;/Software Sorcerer In The Making&gt;</p2>
     <div className="jump">
       <a href='#portfolio' className="explore">Explore My Projects <span>&#x27F6;</span></a>
       <a href='#contact' className="connect">Connect With Me 🙌</a>
@@ -42,7 +42,11 @@ const Web = () => {
   </div>
 </section>
 
-<section id="portfolio">Portfolio</section>
+<section id="portfolio">
+<div class="subheading">
+  <p3>A glimpse of my creations</p3>
+</div>
+</section>
 <section id="contact">Contact</section>
 <script src = "Scroll.js"></script>
 
