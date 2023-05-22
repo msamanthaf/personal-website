@@ -1,5 +1,5 @@
 import './Main.css';
-import './Scroll.js'
+import './Scroll.js';
 
 const Web = () => {
   return (
@@ -46,11 +46,29 @@ const Web = () => {
 </section>
 
 <section id="portfolio">
-<div class="subheading">
-  <div class="hidden">
-    <p3>A glimpse of my creations 🎨✨</p3>
+<div class="subheading hidden">
+    <p3>--- A glimpse of my creations 🎨✨ ---</p3>
+<div class="slide-container">
+        <span class="slider-span" id="slider-span1"></span>
+        <span class="slider-span" id="slider-span2"></span>
+        <span class="slider-span" id="slider-span3"></span>
+
+        <div class="image-slider">
+            <div class="slides-div" id="slide-1">
+                <img src="images/headset.jpg" alt="" class="img" id="img1"></img>
+                <a href="#slider-span1" class="button" id="button-1"></a>
+            </div>
+            <div class="slides-div" id="slide-2">
+                <img src="images/headset.jpg" alt="" class="img" id="img2"></img>
+                <a href="#slider-span2" class="button" id="button-2"></a>
+            </div>
+            <div class="slides-div" id="slide-3">
+                <img src="images/headset.jpg" alt="" class="img" id="img3"></img>
+                <a href="#slider-span3" class="button" id="button-3"></a>
+            </div>
+        </div>
+    </div>
   </div>
-</div>
 </section>
 <section id="contact"><div class="subheading"><p3>What's Next?</p3> <br></br> Contact Me</div></section>
 </div>
