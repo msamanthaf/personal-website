@@ -31,12 +31,15 @@ const Web = () => {
   </div>
   <div class="desc">
     <p2>&lt;/Software Sorcerer In The Making&gt;</p2>
-    <div className="jump">
+    <div class="hidden">
+      <div className="jump">
       <a href='#portfolio' className="explore">Explore My Projects <span>&#x27F6;</span></a>
       <a href='#contact' className="connect">Connect With Me 🙌</a>
+      </div>
     </div>
   </div>
   <div className='icons'>
+    <a href='https://drive.google.com/file/d/18LWYla920C4FaV_P4nnHr5-viNb-3aoT/view?usp=sharing'><img src="resumeicon.png" className="resume" /></a>
     <a href='https://www.linkedin.com/in/marie-samantha-fidelia-82a3151b0/'><img src="linkedin.png" className="linkedin" /></a>
     <a href='https://github.com/msamanthaf'><img src="github.png" className="github" /></a>
   </div>
@@ -44,12 +47,12 @@ const Web = () => {
 
 <section id="portfolio">
 <div class="subheading">
-  <p3>A glimpse of my creations</p3>
+  <div class="hidden">
+    <p3>A glimpse of my creations 🎨✨</p3>
+  </div>
 </div>
 </section>
-<section id="contact">Contact</section>
-<script src = "Scroll.js"></script>
-
+<section id="contact"><div class="subheading"><p3>What's Next?</p3> <br></br> Contact Me</div></section>
 </div>
   );
 }

@@ -52,6 +52,20 @@ el.addEventListener('mousedown', function() {
 el.addEventListener('mouseup', function() {
   el.style.transform = 'perspective(500px) scale(1.1) rotateX(0) rotateY(0)'
 })
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console. log(entry)
+    if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+    } else{
+        entry.target.classList.remove('show');
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
 }
   
 window.onload = () => {

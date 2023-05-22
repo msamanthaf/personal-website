@@ -33,6 +33,19 @@ body{
   cursor: url('../images/pixelcursor.png'), auto;
 }
 
+.hidden {
+  Opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-30%);
+  transition: all 1.5s;
+}
+  
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
 .logo {
   margin-left: 40%;
   margin-top: 20px;
@@ -257,19 +270,27 @@ section#contact{
   margin-left: 50%;
 }
 
+.resume{
+  position: absolute;
+  width: 33px;
+  height: 31px;
+  left: 18px;
+  bottom: 90px
+}
+
 .linkedin{
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   left: 20px;
-  bottom: 60px
+  bottom: 50px
 }
 
 .github{
   position: absolute;
-  width: 31px;
-  height: 31px;
-  left: 20px;
+  width: 30px;
+  height: 30px;
+  left: 19px;
   bottom: 10px
 }
 
@@ -334,13 +355,12 @@ section#contact{
 
 .subheading{
   top: 0;
-  margin-top: -40%;
+  margin-top: -35%;
 }
 
 .subheading p3{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 20px;
-  font-weight: 600;
   font-weight: -10;
   z-index: 10;
 }
@@ -496,14 +516,20 @@ section#contact{
   }
 
   .github{
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     margin-bottom: 2%;
   }
 
   .linkedin{
     width: 16px;
     height: 16px;
+  }
+
+  .resume{
+    margin-bottom: -2%;
+    width: 20px;
+    height: 18px;
   }
 }
 
@@ -517,7 +543,7 @@ section#contact{
 @media screen and (max-width: 545px) {
   .jump {
     width: 80%;
-    margin-bottom: -50%;
+    margin-bottom: -60%;
   }
 
   .jump a {
@@ -530,13 +556,19 @@ section#contact{
   }
 
   .github{
-    width: 16px;
-    height: 16px;
+    width: 17px;
+    height: 17px;
     margin-bottom: 2%;
   }
 
   .linkedin{
     width: 16px;
+    height: 16px;
+  }
+
+  .resume{
+    margin-left: 0.1%;
+    width: 18px;
     height: 16px;
   }
 }
@@ -565,6 +597,26 @@ section#contact{
     margin-left: -5%;
   }
 }
+@media screen and (max-width: 430px) {
+.jump{
+  width: 70%;
+}
+
+.github{
+  left: 56%;
+  bottom: 7%;
+}
+
+.linkedin{
+  bottom: 8.3%;
+  left: 46%;
+}
+
+.resume{
+  bottom: 9.7%;
+  left: 36%;
+}
+}
 
 @media screen and (max-width: 400px) {
   .text-box h1,.text-box h2,.text-box h3{
@@ -582,24 +634,43 @@ section#contact{
     font-size: 33px;
   }
 
-  .jump{
-    margin-bottom: -40%;
+  .desc{
+    margin-top: -20%;
+    font-size: 13px;
   }
-}
 
-@media screen and (max-width: 365px) {
-  .text-box p2{
-    font-size: 14px;
+  .desc p2{
+    font-size: 13px;
   }
 
   #tilt{
     margin-left: 5%;
+  }
+
+  .jump{
+    margin-top: 20%;
+  }
+
+  .github{
+    bottom: 7.2%;
+  }
+  
+  .linkedin{
+    bottom: 8.5%;
+  }
+  
+  .resume{
+    bottom: 9.7%;
   }
 }
 
 @media screen and (max-width: 355px) {
   .jump{
     margin-bottom: -40%;
+  }
+
+   .github{
+    bottom: 7.3%;
   }
 }
 
