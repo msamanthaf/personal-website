@@ -215,6 +215,7 @@ section#profile{
   display: flex;
   align-items: center;
   left: 50%;
+  margin-top: -2%;
 }
 
 .jump a {
@@ -518,6 +519,10 @@ section#profile{
     font-size: 40px;
   }
   
+  .header-nav a{
+    font-size: 10px;
+  }
+
   .desc{
     margin-top: -10%;
     margin-bottom: 10%;
