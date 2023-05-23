@@ -23,7 +23,7 @@ header {
   padding: 5px 0px;
   justify-content: space-between;
   align-items: center;
-  z-index: 100;
+  z-index: 1000000;
   user-select: none;
   transition: 0.5s ease-in-out;
 }

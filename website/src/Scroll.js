@@ -84,6 +84,6 @@ const fadeElements = document.querySelectorAll('.fade');
 fadeElements.forEach((el) => obs.observe(el));
 }
   
-window.onload = () => {
-    init();
-};
+window.addEventListener('DOMContentLoaded', () => {
+  init();
+});
