@@ -1,4 +1,5 @@
-function init() {
+document.addEventListener('DOMContentLoaded', () => {
+  function init() {
     let sections = document.querySelectorAll('section');
     let navLinks = document.querySelectorAll('nav a');
     let header = document.querySelector('header');
@@ -84,6 +85,7 @@ const fadeElements = document.querySelectorAll('.fade');
 fadeElements.forEach((el) => obs.observe(el));
 }
   
-window.addEventListener('DOMContentLoaded', () => {
-  init();
+window.onload = () => {
+    init();
+};
 });
