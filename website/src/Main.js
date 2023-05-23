@@ -31,7 +31,7 @@ const Web = () => {
   </div>
   <div class="desc">
     <p2>&lt;/Software Sorcerer In The Making&gt;</p2>
-    <div class="hidden">
+    <div class="fade">
       <div className="jump">
       <a href='#portfolio' className="explore">Explore My Projects <span>&#x27F6;</span></a>
       <a href='#contact' className="connect">Connect With Me 🙌</a>
@@ -57,7 +57,7 @@ const Web = () => {
 
         <div class="image-slider">
             <div class="slides-div" id="slide-1">
-                <img src="images/cardimg.png" alt="" class="img" id="img1"></img>
+                <img src="images/cardimg.png" alt="" class="img show" id="img1"></img>
                 <a href="#slider-span1" class="button" id="button-1">
                 <a href="https://github.com/msamanthaf" class="view-project" id="view-button"><p4 id="view-text">View &#x27F6;</p4></a>
                 </a>

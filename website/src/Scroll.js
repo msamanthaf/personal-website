@@ -58,6 +58,8 @@ const observer = new IntersectionObserver((entries) => {
     console. log(entry)
     if (entry.isIntersecting) {
         entry.target.classList.add('show');
+        var button1 = document.getElementById('button-1');
+        button1.click();
     } else{
         entry.target.classList.remove('show');
     }
@@ -66,6 +68,20 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console. log(entry)
+    if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+    } else{
+        entry.target.classList.remove('show');
+    }
+  });
+});
+
+const fadeElements = document.querySelectorAll('.fade');
+fadeElements.forEach((el) => obs.observe(el));
 }
   
 window.onload = () => {

@@ -39,6 +39,13 @@ body{
   transform: translateX(-30%);
   transition: all 1.5s;
 }
+
+.fade {
+  Opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-30%);
+  transition: all 1.5s;
+}
   
 .show{
   opacity: 1;
@@ -405,6 +412,7 @@ section#contact{
   width: 150px;
   height: 175px;
   transition: 0.5s;
+  border-radius: 0px;
 }
 
 .button {
@@ -423,7 +431,7 @@ section#contact{
   margin-left: 5%;
   border-radius: 20px;
   transition: 0.5s;
-  background-color: #5d637f;
+  background: linear-gradient(to right, #455189, #777fa4);
   font-size: 15px;
   text-decoration: none;
 }
