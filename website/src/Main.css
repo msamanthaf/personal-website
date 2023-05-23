@@ -173,7 +173,6 @@ section{
 
 .desc p2{
   font-family: 'Source Code Pro', monospace;
-  top: 72%;
   font-size: 20px;
   font-weight: 100;
   font-weight: -10;
@@ -182,7 +181,7 @@ section{
 
 .desc {
   position: absolute;
-  top: 70%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -237,17 +236,19 @@ section#contact{
   background: linear-gradient(#2b3c4e, #2b3c4e);
 }
 
-.jump {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  width: 100vw;
-  text-align: center;
+#jump {
   display: flex;
-  align-items: center;
-  left: 50%;
+  position: relative;
+  flex-direction: row;
+  z-index: 100;
+  gap: 10%;
+  width: 100vw;
+  bottom: 0;
+  justify-content: center;
+  margin-top: -7%;
 }
 
-.jump a {
+#jump a {
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
   color: white;
@@ -255,50 +256,44 @@ section#contact{
   font-weight: 100;
   padding: 10px 10px;
   border: 2px solid white;
-  margin-left: 10%;
   margin-top: 10%;
-  width: 215px;
+  width: fit-content;
 }
 
-.jump a:hover {
+#jump a:hover {
   background-color: white;
   color: #1a224c;
 }
 
-.jump a:hover span {
+#jump a:hover span {
   color: #1a224c;
 }
 
-.explore {
-  margin-left: 50%;
+#icons{
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  z-index: 10000;
+  gap: 10px;
+  bottom: 100px;
+  left: 10px;
 }
 
-.connect {
-  margin-left: 50%;
+#icons img, #icons a{
+  width: 24px;
+  height: 24px;
 }
 
-.resume{
-  position: absolute;
-  width: 28px;
-  height: 26px;
-  left: 18px;
-  bottom: 90px
-}
-
-.linkedin{
-  position: absolute;
+#icons .linkedin{
   width: 23px;
   height: 23px;
-  left: 20px;
-  bottom: 50px
+  left: 1px;
 }
 
-.github{
-  position: absolute;
-  width: 25px;
+#icons .resume{
+  width: 27px;
   height: 25px;
-  left: 19px;
-  bottom: 10px
+  margin-left: -2px;
 }
 
 @keyframes back {
@@ -512,89 +507,7 @@ section#contact{
   border-radius: 6px;
 }
 
-@media screen and (max-width: 2000px) {
-  .jump {
-    margin-left: 30%;
-  }
-}
-
-@media screen and (max-width: 1900px) {
-  .jump {
-    margin-left: 28%;
-  }
-}
-
-@media screen and (max-width: 1800px) {
-  .jump {
-    margin-left: 26%;
-  }
-}
-
-@media screen and (max-width: 1700px) {
-  .jump {
-    margin-left: 24%;
-  }
-}
-
-@media screen and (max-width: 1600px) {
-  .jump {
-    margin-left: 22%;
-  }
-}
-
-@media screen and (max-width: 1500px) {
-  .jump {
-    margin-left: 20%;
-  }
-}
-
-@media screen and (max-width: 1400px) {
-  .jump {
-    margin-left: 18%;
-  }
-}
-
-@media screen and (max-width: 1300px) {
-  .jump {
-    margin-left: 16%;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .jump {
-    margin-left: 14%;
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  .jump {
-    margin-left: 12%;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .jump {
-    margin-left: 10%;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .jump {
-    margin-left: 5%;
-  }
-}
-
 @media screen and (max-width: 680px) {
-  .jump {
-    margin-left: -3%;
-    width: 60%;
-  }
-
-  .jump a {
-    font-size: 10px;
-    width: 200px;
-  }
-
   #tilt{
     width: 40%;
     height: 40%;
@@ -616,88 +529,43 @@ section#contact{
   }
 }
 
-@media screen and (max-width: 646px) {
-  .jump {
-    width: 65%;
-    margin-bottom: -40%;
-  }
-
-  .jump a {
-    font-size: 10px;
-    width: 200px;
-  }
-}
-
 @media screen and (max-width: 600px) {
-  .jump {
-    width: 70%;
-    margin-bottom: -40%;
-  }
-
-  .jump a {
-    font-size: 10px;
-    width: 200px;
-  }
-
   .text-box h1,.text-box h2,.text-box h3{
     font-size: 55px;
   }
 
-  .github{
-    width: 18px;
-    height: 18px;
-    margin-bottom: 1.7%;
+  #icons{
+    flex-direction: row;
+    left: 40vw;
   }
 
-  .linkedin{
+  #icons img, #icons a{
     width: 16px;
     height: 16px;
   }
 
-  .resume{
-    margin-bottom: -2%;
-    width: 20px;
-    height: 18px;
+  #icons .github{
+    width: 17px;
+    height: 17px;
+    margin-left: 0px;
   }
-}
 
-@media screen and (max-width: 575px) {
-  .jump {
-    width: 72%;
-    margin-bottom: -50%;
+  #icons .linkedin{
+    width: 16px;
+    height: 16px;
+    margin-left: 0px;
+  }
+  
+  #icons .resume{
+    width: 16px;
+    height: 16px;
+    margin-left: 0px;
   }
 }
 
 @media screen and (max-width: 545px) {
-  .jump {
-    width: 80%;
-    margin-bottom: -60%;
-  }
-
-  .jump a {
-    font-size: 10px;
-    width: 200px;
-  }
-
   .text-box h1,.text-box h2,.text-box h3{
     font-size: 50px;
-  }
-
-  .github{
-    width: 17px;
-    height: 17px;
-    margin-bottom: 2%;
-  }
-
-  .linkedin{
-    width: 16px;
-    height: 16px;
-  }
-
-  .resume{
-    margin-left: 0.1%;
-    width: 18px;
-    height: 16px;
   }
 }
 
@@ -721,29 +589,9 @@ section#contact{
     margin-bottom: 10%;
   }
 
-  .jump{
-    margin-left: -5%;
+  #jump a{
+    font-size: 10px;
   }
-}
-@media screen and (max-width: 430px) {
-.jump{
-  width: 70%;
-}
-
-.github{
-  left: 56%;
-  bottom: 6.9%;
-}
-
-.linkedin{
-  bottom: 8.3%;
-  left: 46%;
-}
-
-.resume{
-  bottom: 9.7%;
-  left: 36%;
-}
 }
 
 @media screen and (max-width: 400px) {
@@ -762,11 +610,6 @@ section#contact{
     font-size: 33px;
   }
 
-  .desc{
-    margin-top: -20%;
-    font-size: 13px;
-  }
-
   .desc p2{
     font-size: 13px;
   }
@@ -774,31 +617,9 @@ section#contact{
   #tilt{
     margin-left: 5%;
   }
-
-  .jump{
-    margin-top: 20%;
-  }
-
-  .github{
-    bottom: 7.1%;
-  }
-}
-
-@media screen and (max-width: 355px) {
-  .jump{
-    margin-bottom: -40%;
-  }
-
-  .resume{
-    margin-bottom: -2.5%;
-  }
 }
 
 @media screen and (max-width: 340px) {
-  .jump{
-    margin-left: -8%;
-  }
-
   .text-box p2{
     font-size: 13px;
   }
@@ -810,24 +631,8 @@ section#contact{
   #tilt{
     margin-left: 10%;
   }
-}
 
-@media screen and (max-width: 338px) {
-  .jump{
-    margin-left: -8%;
-  }
-}
-
-@media screen and (max-width: 325px) {
-  .jump{
-    margin-left: -8%;
-  }
-
-  .github{
-    margin-bottom: 2.1%;
-  }
-
-  .resume{
-    margin-bottom: -2.5%;
+  #jump a{
+    font-size: 9px;
   }
 }
