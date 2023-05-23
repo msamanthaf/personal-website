@@ -30,7 +30,7 @@ const Web = () => {
   </div>
   </div>
   <div class="desc">
-    <p2>&lt;Software Sorcerer In The Making /&gt;</p2>
+    <p2>&lt;Software Sorcerer In The Making/&gt;</p2>
     <div class="fade">
       <div id="jump">
       <a href='#portfolio' className="explore">Explore My Projects <span>&#x27F6;</span></a>

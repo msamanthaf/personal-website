@@ -5,6 +5,10 @@
   cursor: url('../public/images/pixelcursor.png');
 }
 
+body, html {
+  overflow-x: hidden;
+}
+
 .main {
   text-align: left;
 }
@@ -225,7 +229,7 @@ section#profile{
   display: flex;
   flex-direction: column;
   background: linear-gradient(#141d26, #353C51);
-  height: fit-content;
+  height: 100vh;
 }
 
 section#portfolio{
@@ -507,6 +511,90 @@ section#contact{
   border-radius: 6px;
 }
 
+@media screen and (max-width: 700px) {
+  #slider-span1:target ~ .image-slider #img1,
+  #slider-span1:target ~.image-slider #button-1,
+  #slider-span2:target ~ .image-slider #img2,
+  #slider-span2:target ~.image-slider #button-2,
+  #slider-span3:target ~ .image-slider #img3,
+  #slider-span3:target ~.image-slider #button-3,
+  #slider-span4:target ~ .image-slider #img4,
+  #slider-span4:target ~.image-slider #button-4,
+  #slider-span5:target ~ .image-slider #img5,
+  #slider-span5:target ~.image-slider #button-5{
+    width: 250px;
+    height: 300px;
+    background-color: transparent;
+  }
+
+  .img{
+    width: 100px;
+    height: 125px;
+  }
+  
+  .button {
+    width: 100px;
+    height: 125px;
+  }
+
+  .image-slider{
+    width: 50%;
+    height: 500px;
+  }
+
+  .subheading p3{
+    font-size: 15px;
+  }
+
+  #slider-span1, #slider-span2, #slider-span3, #slider-span4, #slider-span5{
+    margin-top: -500%;
+  }
+
+  #slider-span1:target ~.image-slider{
+    left:130%;
+  }
+
+  #slider-span2:target ~.image-slider{
+    left:80%;
+  }
+  #slider-span3:target ~.image-slider{
+    left:25%;
+  }
+  
+  #slider-span4:target ~.image-slider{
+    left: -30%;
+  }
+  
+  #slider-span5:target ~.image-slider{
+    left: -80%;
+  }
+
+  .button a , .p4{
+    width: 90px;
+    height: 18px;
+    top: 105px;
+    margin-left: 5%;
+    font-size: 10px;
+  }
+
+  #slider-span1:target ~.image-slider #view-button{
+    position: absolute;
+    width: 223px;
+    height: 40px;
+    top: 250px;
+    margin-left: 5%;
+    background: linear-gradient(to right, #596cc5, #a5b1e5);
+  }
+
+  #slider-span1:target ~.image-slider #view-text{
+    margin-left: 35%;
+  }
+
+  #view-text{
+    margin-left: 30%;
+  }
+}
+
 @media screen and (max-width: 680px) {
   #tilt{
     width: 40%;
@@ -535,6 +623,7 @@ section#contact{
   }
 
   #icons{
+    position: absolute;
     flex-direction: row;
     left: 40vw;
   }
