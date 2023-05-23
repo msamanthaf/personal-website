@@ -63,19 +63,19 @@ const Web = () => {
                 </a>
             </div>
             <div class="slides-div" id="slide-2">
-                <img src="images/headset.jpg" alt="" class="img" id="img2"></img>
+                <img src="images/cardimg.png" alt="" class="img" id="img2"></img>
                 <a href="#slider-span2" class="button" id="button-2"></a>
             </div>
             <div class="slides-div" id="slide-3">
-                <img src="images/headset.jpg" alt="" class="img" id="img3"></img>
+                <img src="images/cardimg.png" alt="" class="img" id="img3"></img>
                 <a href="#slider-span3" class="button" id="button-3"></a>
             </div>
             <div class="slides-div" id="slide-4">
-                <img src="images/headset.jpg" alt="" class="img" id="img4"></img>
+                <img src="images/cardimg.png" alt="" class="img" id="img4"></img>
                 <a href="#slider-span4" class="button" id="button-4"></a>
             </div>
             <div class="slides-div" id="slide-5">
-                <img src="images/headset.jpg" alt="" class="img" id="img5"></img>
+                <img src="images/cardimg.png" alt="" class="img" id="img5"></img>
                 <a href="#slider-span5" class="button" id="button-5"></a>
             </div>
         </div>
