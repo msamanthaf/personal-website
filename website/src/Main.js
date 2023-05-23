@@ -33,7 +33,7 @@ const Web = () => {
     <p2>&lt;Software Sorcerer In The Making/&gt;</p2>
     <div class="fade">
       <div id="jump">
-      <a href='#portfolio' className="explore">Explore My Projects <span>&#x27F6;</span></a>
+      <a href='#slider-span1' className="explore">Explore My Projects <span>&#x27F6;</span></a>
       <a href='#contact' className="connect">Connect With Me 🙌</a>
       </div>
     </div>
@@ -57,25 +57,25 @@ const Web = () => {
 
         <div class="image-slider">
             <div class="slides-div" id="slide-1">
-                <img src="images/cardimg.png" alt="" class="img show" id="img1"></img>
+                <img src="images/speech-less-card.png" alt="" class="img show" id="img1"></img>
                 <a href="#slider-span1" class="button" id="button-1">
-                <a href="https://github.com/msamanthaf" class="view-project" id="view-button"><p4 id="view-text">View &#x27F6;</p4></a>
+                <a href="https://devpost.com/software/speechless-vmrfkz" class="view-project" id="view-button"><p4 id="view-text">View &#x27F6;</p4></a>
                 </a>
             </div>
             <div class="slides-div" id="slide-2">
-                <img src="images/cardimg.png" alt="" class="img" id="img2"></img>
+                <img src="images/expireminder-card.png" alt="" class="img" id="img2"></img>
                 <a href="#slider-span2" class="button" id="button-2"></a>
             </div>
             <div class="slides-div" id="slide-3">
-                <img src="images/cardimg.png" alt="" class="img" id="img3"></img>
+                <img src="images/dsci-card.png" alt="" class="img" id="img3"></img>
                 <a href="#slider-span3" class="button" id="button-3"></a>
             </div>
             <div class="slides-div" id="slide-4">
-                <img src="images/cardimg.png" alt="" class="img" id="img4"></img>
+                <img src="images/gamejam-card.png" alt="" class="img" id="img4"></img>
                 <a href="#slider-span4" class="button" id="button-4"></a>
             </div>
             <div class="slides-div" id="slide-5">
-                <img src="images/cardimg.png" alt="" class="img" id="img5"></img>
+                <img src="images/seamptoms-card.png" alt="" class="img" id="img5"></img>
                 <a href="#slider-span5" class="button" id="button-5"></a>
             </div>
         </div>
