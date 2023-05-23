@@ -3,8 +3,8 @@
 Developed with CSS and React JS (Frontend)
 Deployed via Github Pages
 
-Available in public at the domain: mariesamantha.dev
+Publicly available at the domain: mariesamantha.dev
 
-To run/start the page, do the following command:
-cd website <br />
+To run/start the page, do the following command: <br/>
+cd website <br/>
 npm start
