@@ -233,11 +233,17 @@ section#profile{
 }
 
 section#portfolio{
+  display: flex;
+  flex-direction: column;
   background: linear-gradient(#353C51, #2b3c4e);
+  height: fit-content;
 }
 
 section#contact{
-  background: linear-gradient(#2b3c4e, #2b3c4e);
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(#2b3c4e, #273b50);
+  height: fit-content;
 }
 
 #jump {
@@ -369,6 +375,26 @@ section#contact{
   right: 10px;
 } */
 
+.next{
+  top:0;
+  width: 100vw;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.next span{
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 25px;
+}
+
+.next img{
+  position: absolute;
+  margin-top: -9%;
+}
+
 .subheading{
   top: 0;
   margin-top: -35%;
@@ -377,7 +403,6 @@ section#contact{
 .subheading p3{
   font-family: 'Instrument Sans', sans-serif;
   font-size: 25px;
-  font-weight: 100;
   z-index: 1000;
   position: absolute;
   margin-left: -77%;
@@ -735,13 +760,6 @@ section#contact{
   .desc{
     margin-top: -10%;
     margin-bottom: 10%;
-  }
-
-  .subheading p3{
-    position: absolute;
-    font-size: 16px;
-    margin-top: 15%;
-    margin-left: -79%;
   }
   
   #head{

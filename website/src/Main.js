@@ -89,11 +89,14 @@ const Web = () => {
             </div>
         </div>
     </div>
-  </div>
+</div>
 </section>
+
 <section id="contact">
-  <div class="subheading"><p3>What's Next?</p3></div>
-Contact Me
+<div class="next hidden">
+  <img src="images/subheading.png" id="head"></img>
+  <span>What's Next?</span>
+</div>
 </section>
 </div>
   );
