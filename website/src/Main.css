@@ -389,7 +389,7 @@ section#contact{
 .copyright .credit{
   justify-content: center;
   position: absolute;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Source Code Pro', monospace;
   font-size: 12px;
   font-weight: 100;
   color: #ffffff;
