@@ -117,10 +117,15 @@ const Web = () => {
           <div class="app-title">
             <span>Contact Me!</span>
           </div>
-          <span id='contactdesc'>Got some remarks about this webpage? Feeling bored and want to talk about cats? <br/>Feel free to send me a message!</span>
+          <span id='contactdesc'>Got some remarks about this webpage? Feeling like chatting about cats? <br/>Feel free to send me a message!</span>
           <div class="app-contact">+1 (236) 308 6163<br/><br/>
           mariesamantha.f@gmail.com <br/><br/>
           Vancouver, BC V6T 1Z4, Canada</div>
+          <div class="contact-icons">
+            <img src="images/phoneicon.png"></img>
+            <img src="images/mailicon.png"></img>
+            <img src="images/addressicon.png"></img>
+          </div>
           <div class="map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10415.33325714673!2d-123.2459938!3d49.2606052!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548672cc2fd41e03%3A0xc79dd4e7732aa2f3!2sThe%20University%20of%20British%20Columbia!5e0!3m2!1sen!2sid!4v1684936462679!5m2!1sen!2sid" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>

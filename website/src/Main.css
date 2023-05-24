@@ -430,10 +430,10 @@ section#contact{
 }
 
 .map iframe{
-  margin-left: 30px;
+  margin-left: 0px;
   margin-top: 30px;
-  height: 110px;
-  width: 200px;
+  height: 120px;
+  width: 220px;
   border-radius: 10px;
   opacity: 0.5;
 }
@@ -480,10 +480,23 @@ button, textarea {
 
 .screen {
   position: relative;
-  background: #acacac;
+  background: #b8b7b7;
   border-radius: 15px;
   width: 70vw;
   height: 500px;
+}
+
+.contact-icons{
+  position: absolute;
+  top: 215px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-icons img{
+  width: 20px;
+  height: 20px;
 }
 
 .screen-header {
@@ -544,10 +557,6 @@ button, textarea {
   margin-top: 00px;
   height: 200px;
   gap: 10px;
-}
-
-.message {
-  margin-top: -20px;
 }
 
 .screen-body-item {
@@ -684,7 +693,6 @@ button, textarea {
   width: 150px;
   height: 175px;
   transition: 0.5s;
-  background-color: rgba(53, 53, 94, 0.2);
 }
 
 .button a , .p4{
