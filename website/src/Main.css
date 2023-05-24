@@ -459,7 +459,7 @@ section#contact{
   -moz-osx-font-smoothing: grayscale;
 }
 
-button, textarea {
+button {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   letter-spacing: 1.4px;

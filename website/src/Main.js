@@ -1,7 +1,38 @@
 import './main.css';
 import './scroll.js';
+import React, { useState } from 'react';
 
 const Web = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('${process.env.PORT_URL}/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, email, message }),
+      });
+
+      if (response.ok) {
+        alert('Message sent successfully');
+        setName('');
+        setEmail('');
+        setMessage('');
+      } else {
+        throw new Error('Error sending message');
+      }
+    } catch (error) {
+      console.error(error);
+      alert('Error sending message');
+    }
+  };
+
   return (
 <div className="main">
 <header>
@@ -132,11 +163,19 @@ const Web = () => {
         </div>
         <div class="screen-body-item">
           <div class="app-form">
-              <textarea class="app-form-control" placeholder="NAME"/>
-              <textarea class="app-form-control" placeholder="EMAIL"/>
+                    <input
+                      className="app-form-control"
+                      placeholder="NAME"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}/>
+                    <input
+                      className="app-form-control"
+                      placeholder="EMAIL"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}/>
           </div>
-              <textarea class="app-form-control message" placeholder="MESSAGE"></textarea>
-          <button class="app-form-button">SEND</button>
+              <textarea className="app-form-control message" placeholder="MESSAGE" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
+          <button class="app-form-button" onClick={handleSubmit}>SEND</button>
           </div>
         </div>
       </div>
