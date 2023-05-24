@@ -425,7 +425,7 @@ section#contact{
   font-size: 12px;
   font-family: 'Poppins', sans-serif;
   font-weight: 100;
-  color: #4d4d4f;
+  color: #454545;
   opacity: 70%;
 }
 
@@ -618,9 +618,7 @@ button, textarea {
   background: none;
   border: none;
   border-bottom: 1px solid #666;
-  color: #ddd;
   font-size: 14px;
-  text-transform: uppercase;
   outline: none;
   transition: border-color .2s;
 }
