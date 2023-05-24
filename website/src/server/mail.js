@@ -1,5 +1,6 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
+require('dotenv').config();
 
 const app = express();
 const port = 3000;
@@ -13,7 +14,7 @@ app.post('/send-email', (req, res) => {
     service: 'Gmail', 
     auth: {
       user: 'personalwebsitemsf@gmail.com',
-      pass: 'Nottherealpassword',
+      pass: process.env.GMAIL_PASSWORD,
     },
   });
 
