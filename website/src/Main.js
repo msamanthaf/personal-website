@@ -97,6 +97,43 @@ const Web = () => {
   <img src="images/subheading.png" id="head"></img>
   <span>What's Next?</span>
 </div>
+<div class="background">
+  <div class="contactinner">
+    <div class="screen">
+      <div class="screen-header">
+        <div class="screen-header-left">
+          <div class="screen-header-button close"></div>
+          <div class="screen-header-button maximize"></div>
+          <div class="screen-header-button minimize"></div>
+        </div>
+        <div class="screen-header-right">
+          <div class="screen-header-ellipsis"></div>
+          <div class="screen-header-ellipsis"></div>
+          <div class="screen-header-ellipsis"></div>
+        </div>
+      </div>
+      <div class="screen-body">
+        <div class="screen-body-item left">
+          <div class="app-title">
+            <span>Contact Me!</span>
+          </div>
+          <div class="app-contact">CONTACT INFO : +62 81 314 928 595</div>
+        </div>
+        <div class="screen-body-item">
+          <div class="app-form">
+              <textarea class="app-form-control" placeholder="NAME"/>
+              <textarea class="app-form-control" placeholder="EMAIL"/>
+          </div>
+              <textarea class="app-form-control message" placeholder="MESSAGE"></textarea>
+          <button class="app-form-button">SEND</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="copyright">
+  <span>© 2023 by Marie Samantha F</span>
+</div>
 </section>
 </div>
   );
