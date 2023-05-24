@@ -91,7 +91,8 @@ const Web = () => {
     </div>
   </div>
 </section>
-<section id="contact"><div class="subheading"><p3>What's Next?</p3></div>
+<section id="contact">
+  <div class="subheading"><p3>What's Next?</p3></div>
 Contact Me
 </section>
 </div>

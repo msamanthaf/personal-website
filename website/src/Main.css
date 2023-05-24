@@ -579,22 +579,22 @@ section#contact{
   }
 
   #slider-span1:target ~.image-slider{
-    left:100%;
+    left:95%;
   }
 
   #slider-span2:target ~.image-slider{
-    left:85%;
+    left:75%;
   }
   #slider-span3:target ~.image-slider{
     left:55%;
   }
   
   #slider-span4:target ~.image-slider{
-    left: 25%;
+    left: 35%;
   }
   
   #slider-span5:target ~.image-slider{
-    left: 0%;
+    left: 15%;
   }
 
   .button a , .p4{
@@ -605,7 +605,11 @@ section#contact{
     font-size: 10px;
   }
 
-  #slider-span1:target ~.image-slider #view-button{
+  #slider-span1:target ~.image-slider #view-button,
+  #slider-span2:target ~.image-slider #view-button2,
+  #slider-span3:target ~.image-slider #view-button3,
+  #slider-span4:target ~.image-slider #view-button4,
+  #slider-span5:target ~.image-slider #view-button5{
     position: absolute;
     width: 223px;
     height: 40px;
@@ -614,12 +618,24 @@ section#contact{
     background: linear-gradient(to right, #596cc5, #a5b1e5);
   }
 
-  #slider-span1:target ~.image-slider #view-text{
+  #slider-span1:target ~.image-slider #view-text,
+  #slider-span2:target ~.image-slider #view-text2,
+  #slider-span3:target ~.image-slider #view-text3,
+  #slider-span4:target ~.image-slider #view-text4,
+  #slider-span5:target ~.image-slider #view-text5{
     margin-left: 35%;
   }
 
-  #view-text{
+  #view-text, #view-text2, #view-text3, #view-text4, #view-text5{
     margin-left: 30%;
+  }
+
+  .slides-div {
+    margin: 0 5px;
+  }
+
+  #slider-span1, #slider-span2, #slider-span3, #slider-span4, #slider-span5{
+    margin-top: -350%;
   }
 }
 
@@ -733,6 +749,26 @@ section#contact{
     height: 39px;
     z-index: 1;
     margin-bottom: 10%;
+  }
+
+  #slider-span1:target ~.image-slider{
+    left:120%;
+  }
+
+  #slider-span2:target ~.image-slider{
+    left:85%;
+  }
+
+  #slider-span4:target ~.image-slider{
+    left: 20%;
+  }
+  
+  #slider-span5:target ~.image-slider{
+    left: 0%;
+  }
+
+  #slider-span1, #slider-span2, #slider-span3, #slider-span4, #slider-span5{
+    margin-top: -700%;
   }
 }
 
