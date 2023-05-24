@@ -5,7 +5,7 @@ const Web = () => {
   return (
 <div className="main">
 <header>
-<a href='#profile'><img src="images/Icon.png" className="logo" /></a>
+<a href='#profile'><img src="images/Icon.png" loading="lazy" className="logo" /></a>
   <nav className="header-nav">
       <a href='#profile' class="active">Profile</a>
       <a href='#portfolio'>Portfolio</a>
@@ -39,15 +39,15 @@ const Web = () => {
     </div>
   </div>
   <div id='icons'>
-    <a href='https://drive.google.com/file/d/18LWYla920C4FaV_P4nnHr5-viNb-3aoT/view?usp=sharing'><img src="images/resumeicon.png" className="resume" /></a>
-    <a href='https://www.linkedin.com/in/marie-samantha-fidelia-82a3151b0/'><img src="images/linkedin.png" className="linkedin" /></a>
-    <a href='https://github.com/msamanthaf'><img src="images/github.png" className="github" /></a>
+    <a href='https://drive.google.com/file/d/18LWYla920C4FaV_P4nnHr5-viNb-3aoT/view?usp=sharing'><img src="images/resumeicon.png" loading="lazy" className="resume" /></a>
+    <a href='https://www.linkedin.com/in/marie-samantha-fidelia-82a3151b0/'><img src="images/linkedin.png" loading="lazy" className="linkedin" /></a>
+    <a href='https://github.com/msamanthaf'><img src="images/github.png" loading="lazy" className="github" /></a>
   </div>
 </section>
 
 <section id="portfolio">
 <div class="subheading hidden">
-    <img src="images/subheading.png" id="head"></img>
+    <img src="images/subheading.png" loading="lazy" id="head"/>
     <p3>A glimpse of my creations</p3>
 <div class="slide-container">
         <span class="slider-span" id="slider-span1"></span>
@@ -58,31 +58,31 @@ const Web = () => {
 
         <div class="image-slider">
             <div class="slides-div" id="slide-1">
-                <img src="images/speech-less-card.png" alt="" class="img show" id="img1"></img>
+                <img src="images/speech-less-card.png" loading="lazy" class="img show" id="img1"/>
                 <a href="#slider-span1" class="button" id="button-1">
                 <a href="https://devpost.com/software/speechless-vmrfkz" class="view-project" id="view-button"><p4 id="view-text">View &#x27F6;</p4></a>
                 </a>
             </div>
             <div class="slides-div" id="slide-2">
-                <img src="images/expireminder-card.png" alt="" class="img" id="img2"></img>
+                <img src="images/expireminder-card.png" loading="lazy" class="img" id="img2"/>
                 <a href="#slider-span2" class="button" id="button-2">
                 <a href="https://github.com/msamanthaf/Expireminder" class="view-project" id="view-button2"><p4 id="view-text2">View &#x27F6;</p4></a>
                 </a>
             </div>
             <div class="slides-div" id="slide-3">
-                <img src="images/dsci-card.png" alt="" class="img" id="img3"></img>
+                <img src="images/dsci-card.png" loading="lazy" class="img" id="img3"/>
                 <a href="#slider-span3" class="button" id="button-3">
                 <a href="https://github.com/msamanthaf/Ad_Classification_DSCI/blob/main/Final_Project_Ad_Classification.ipynb" class="view-project" id="view-button3"><p4 id="view-text3">View &#x27F6;</p4></a>
                 </a>
             </div>
             <div class="slides-div" id="slide-4">
-                <img src="images/gamejam-card.png" alt="" class="img" id="img4"></img>
+                <img src="images/gamejam-card.png" loading="lazy" class="img" id="img4"/>
                 <a href="#slider-span4" class="button" id="button-4">
                 <a href="https://imaginary-grass.itch.io/mars-needs-gums" class="view-project" id="view-button4"><p4 id="view-text4">View &#x27F6;</p4></a>
                 </a>
             </div>
             <div class="slides-div" id="slide-5">
-                <img src="images/seamptoms-card.png" alt="" class="img" id="img5"></img>
+                <img src="images/seamptoms-card.png" loading="lazy"class="img" id="img5"/>
                 <a href="#slider-span5" class="button" id="button-5">
                 <a href="https://devpost.com/software/sea-mptoms" class="view-project" id="view-button5"><p4 id="view-text5">View &#x27F6;</p4></a>
                 </a>

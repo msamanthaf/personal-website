@@ -11,7 +11,17 @@
     <title>Be a fam, hire Sam ~(˘▾˘~)</title>
   </head>
   <body>
+    <script async src="Scroll.js"></script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script>
+      function loadCSS(url) {
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = url;
+        document.head.appendChild(link);
+      }
+      loadCSS('Main.css');
+    </script>
   </body>
 </html>
