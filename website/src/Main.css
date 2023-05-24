@@ -478,7 +478,11 @@ section#contact{
   background-color: transparent;
 }
 
-#slider-span1:target ~.image-slider #view-button{
+#slider-span1:target ~.image-slider #view-button, 
+#slider-span2:target ~.image-slider #view-button2,
+#slider-span3:target ~.image-slider #view-button3,
+#slider-span4:target ~.image-slider #view-button4,
+#slider-span5:target ~.image-slider #view-button5{
   position: absolute;
   width: 273px;
   height: 45px;
@@ -487,14 +491,18 @@ section#contact{
   background: linear-gradient(to right, #596cc5, #a5b1e5);
 }
 
-#slider-span1:target ~.image-slider #view-text{
+#slider-span1:target ~.image-slider #view-text, 
+#slider-span2:target ~.image-slider #view-text2,
+#slider-span3:target ~.image-slider #view-text3,
+#slider-span4:target ~.image-slider #view-text4,
+#slider-span5:target ~.image-slider #view-text5{
   position: absolute;
   margin-left: 100px;
   margin-top: 6px;
   font-size: 20px;
 }
 
-#view-text:hover{
+.view-project p4:hover{
   color: #2b3c4e;
 }
 
