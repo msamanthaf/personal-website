@@ -1,5 +1,5 @@
-import './Main.css';
-import './Scroll.js';
+import './main.css';
+import './scroll.js';
 
 const Web = () => {
   return (
@@ -117,7 +117,7 @@ const Web = () => {
           <div class="app-title">
             <span>Contact Me!</span>
           </div>
-          <span id='contactdesc'>Got some remarks about this webpage? Feeling like chatting about cats? <br/>Feel free to send me a message!</span>
+          <span id='contactdesc'>Got some remarks on this site? Feel like chatting about cats? <br/>Feel free to send me a message!</span>
           <div class="app-contact">+1 (236) 308 6163<br/><br/>
           mariesamantha.f@gmail.com <br/><br/>
           Vancouver, BC V6T 1Z4, Canada</div>
