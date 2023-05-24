@@ -366,7 +366,6 @@ section#contact{
 }
 
 .copyright{
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
   width: 100vw;
@@ -381,29 +380,13 @@ section#contact{
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
   font-weight: 100;
-  color: #ffffff;
+  color: #afafaf;
   right: 20px;
   bottom: 10px;
 }
 
-.copyright .credit{
-  justify-content: center;
-  position: absolute;
-  font-family: 'Source Code Pro', monospace;
-  font-size: 12px;
-  font-weight: 100;
-  color: #ffffff;
-  left: 42vw;
-  bottom: 10px;
-}
-
-.copyright #top{
-  bottom: 30px;
-  left: 35vw;
-}
-
 .next{
-  margin-top: 20%;
+  margin-top: 300px;
   top:0;
   width: 100vw;
   height: fit-content;
@@ -435,6 +418,28 @@ section#contact{
   position: absolute;
   margin-left: -77%;
   margin-top: 20%;
+}
+
+#contactdesc{
+  margin-top: 30px;
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  color: #4d4d4f;
+  opacity: 70%;
+}
+
+.map iframe{
+  margin-left: 30px;
+  margin-top: 30px;
+  height: 110px;
+  width: 200px;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+
+.map iframe:hover{
+  opacity: 1;
 }
 
 #head{
@@ -493,7 +498,7 @@ button, textarea {
 
 .screen-header-left {
   margin-right: auto;
-  margin-top: -50px;
+  margin-top: -60px;
 }
 
 .screen-header-button {
@@ -554,6 +559,7 @@ button, textarea {
 .screen-body-item.left {
   display: flex;
   flex-direction: column;
+  margin-top: -30px;
 }
 
 .app-title {
@@ -577,8 +583,11 @@ button, textarea {
 
 .app-contact {
   margin-top: auto;
-  font-size: 8px;
+  font-size: 12px;
+  font-weight: 600;
   color: #888;
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .app-form-group {
@@ -628,7 +637,7 @@ button, textarea {
 }
 
 .app-form-button:hover {
-  color: #2b3c4e;
+  color: #ffffff;
 }
 
 .slide-container {
