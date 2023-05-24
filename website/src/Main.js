@@ -47,7 +47,8 @@ const Web = () => {
 
 <section id="portfolio">
 <div class="subheading hidden">
-    <p3>--- A glimpse of my creations 🎨✨ ---</p3>
+    <img src="images/subheading.png" id="head"></img>
+    <p3>A glimpse of my creations</p3>
 <div class="slide-container">
         <span class="slider-span" id="slider-span1"></span>
         <span class="slider-span" id="slider-span2"></span>
@@ -82,7 +83,9 @@ const Web = () => {
     </div>
   </div>
 </section>
-<section id="contact"><div class="subheading"><p3>What's Next?</p3> <br></br> Contact Me</div></section>
+<section id="contact"><div class="subheading"><p3>What's Next?</p3></div>
+Contact Me
+</section>
 </div>
   );
 }
