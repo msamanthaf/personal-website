@@ -2,7 +2,7 @@
 
 *{
   scroll-behavior: smooth;
-  cursor: url('../public/images/pixelcursor.png');
+  cursor: url('../../public/images/pixelcursor.png');
 }
 
 body, html {
@@ -34,7 +34,7 @@ body{
   margin: 0;
   justify-content: left;
   caret-color: transparent;
-  cursor: url('../public/images/pixelcursor.png'), auto;
+  cursor: url('../../public/images/pixelcursor.png'), auto;
 }
 
 .hidden {
@@ -218,7 +218,7 @@ section{
   font-size: 70px;
   color: transparent;
   -webkit-text-stroke: 1px white;
-  background: url('../public/images/binarybg.png');
+  background: url('../../public/images/binarybg.png');
   background-size: contain;
   -webkit-background-clip: text;
   background-position: 0 0;
@@ -348,7 +348,7 @@ section#contact{
   width: 300px;
   background-color: transparent;
   border-radius: 0px;
-  background-image: url('../public/images/pixelsam.png');
+  background-image: url('../../public/images/pixelsam.png');
   background-size: 65%;
   background-repeat: no-repeat;
   animation: fade-in-up 1s timing-function 0.5s iteration-count direction forwards;
@@ -551,15 +551,9 @@ button {
   display: flex;
 }
 
-.app-form{
+.screen-body-item {
   display: flex;
   flex-direction: column;
-  margin-top: 00px;
-  height: 200px;
-  gap: 10px;
-}
-
-.screen-body-item {
   flex: 1;
   padding: 50px;
   height: 500px;
@@ -597,54 +591,6 @@ button {
   color: #888;
   margin-left: 30px;
   margin-top: 30px;
-}
-
-.app-form-group {
-  margin-bottom: 0px;
-}
-
-.app-form-group.message {
-  margin-top: 40px;
-}
-
-.app-form-group.buttons {
-  margin-bottom: 0;
-  text-align: right;
-}
-
-.app-form-control {
-  width: 100%;
-  padding: 10px 0;
-  background: none;
-  border: none;
-  border-bottom: 1px solid #666;
-  font-size: 14px;
-  outline: none;
-  transition: border-color .2s;
-}
-
-.app-form-control::placeholder {
-  color: #666;
-}
-
-.app-form-control:focus {
-  border-bottom-color: #ddd;
-}
-
-.app-form-button {
-  position: absolute;
-  margin-left: -50px;
-  margin-top: 150px;
-  background: none;
-  border: none;
-  color: #3b5167;
-  font-size: 14px;
-  cursor: pointer;
-  outline: none;
-}
-
-.app-form-button:hover {
-  color: #ffffff;
 }
 
 .slide-container {

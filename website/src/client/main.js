@@ -1,36 +1,21 @@
 import './main.css';
 import './scroll.js';
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Web = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const form = useRef();
 
-  const handleSubmit = async (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
 
-    try {
-      const response = await fetch('${process.env.PORT_URL}/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ name, email, message }),
+    emailjs.sendForm('service_shhbcfn', 'template_x77yj7w', form.current, 'M86Es1_k8sAEkTlH8')
+      .then((result) => {
+        alert("Message sent successfully!");
+        form.current.reset();
+      }, (error) => {
+        alert("Error sending message, please try again");
       });
-
-      if (response.ok) {
-        alert('Message sent successfully');
-        setName('');
-        setEmail('');
-        setMessage('');
-      } else {
-        throw new Error('Error sending message');
-      }
-    } catch (error) {
-      console.error(error);
-      alert('Error sending message');
-    }
   };
 
   return (
@@ -162,20 +147,12 @@ const Web = () => {
           </div>
         </div>
         <div class="screen-body-item">
-          <div class="app-form">
-                    <input
-                      className="app-form-control"
-                      placeholder="NAME"
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}/>
-                    <input
-                      className="app-form-control"
-                      placeholder="EMAIL"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}/>
-          </div>
-              <textarea className="app-form-control message" placeholder="MESSAGE" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
-          <button class="app-form-button" onClick={handleSubmit}>SEND</button>
+        <form ref={form} onSubmit={sendEmail}>
+            <input type="text" name="from_name" placeholder='NAME'/>
+            <input type="email" name="from_email" placeholder='EMAIL'/>
+            <textarea name="message" placeholder='MESSAGE'/>
+            <input type="submit" value="Send" />
+        </form>
           </div>
         </div>
       </div>
