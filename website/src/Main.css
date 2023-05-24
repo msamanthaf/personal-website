@@ -366,6 +366,7 @@ section#contact{
 }
 
 .copyright{
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   width: 100vw;
@@ -375,6 +376,7 @@ section#contact{
 }
 
 .copyright span{
+  justify-content: right;
   position: absolute;
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
@@ -382,6 +384,22 @@ section#contact{
   color: #ffffff;
   right: 20px;
   bottom: 10px;
+}
+
+.copyright .credit{
+  justify-content: center;
+  position: absolute;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 100;
+  color: #ffffff;
+  left: 42vw;
+  bottom: 10px;
+}
+
+.copyright #top{
+  bottom: 30px;
+  left: 35vw;
 }
 
 .next{

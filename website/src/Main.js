@@ -132,7 +132,9 @@ const Web = () => {
     </div>
 </div>
 <div class="copyright">
-  <span>© 2023 by Marie Samantha F</span>
+  <span>©2023 by Marie Samantha F</span>
+  <span class="credit" id="top">Developed with React.js + CSS frontend and Node.js backend</span>
+  <span class="credit">Deployed via GitHub Pages</span>
 </div>
 </section>
 </div>
