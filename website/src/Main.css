@@ -466,7 +466,7 @@ button, textarea {
 }
 
 .background {
-  margin-top: 5%;
+  margin-top: 20px;
   display: flex;
   min-height: 100vh;
   caret-color: #77afe8;

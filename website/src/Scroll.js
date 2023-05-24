@@ -87,3 +87,7 @@ fadeElements.forEach((el) => obs.observe(el));
 window.onload = () => {
     init();
 };
+
+window.onbeforeunload = function() {
+  window.location.href = "http://www.mariesamantha.dev";
+}
