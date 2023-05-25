@@ -1,6 +1,6 @@
 import './main.css';
 import './scroll.js';
-import React, { useRef } from 'react';
+import React, { useRef , useState} from 'react';
 import emailjs from '@emailjs/browser';
 
 const Web = () => {
@@ -8,6 +8,15 @@ const Web = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('msg').value;
+
+    if (name.length === 0 || email.length === 0 || message.length === 0) {
+      alert('Please fill in all the fields.');
+      return;
+    }
 
     emailjs.sendForm('service_shhbcfn', 'template_x77yj7w', form.current, 'M86Es1_k8sAEkTlH8')
       .then((result) => {
