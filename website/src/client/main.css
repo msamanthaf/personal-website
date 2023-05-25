@@ -387,8 +387,7 @@ section#contact{
 }
 
 .next{
-  position: absolute;
-  margin-top: -700px;
+  position: relative;
   width: 100vw;
   height: fit-content;
   align-items: center;

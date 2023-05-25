@@ -105,31 +105,31 @@ const Web = () => {
 
         <div class="image-slider">
             <div class="slides-div" id="slide-1">
-                <img src="images/speech-less-card.png" loading="lazy" class="img show" id="img1"/>
+                <img src="images/speech-less-card.png" class="img show" id="img1"/>
                 <a href="#slider-span1" class="button" id="button-1">
                 <a href="https://devpost.com/software/speechless-vmrfkz" class="view-project" id="view-button"><p4 id="view-text">View &#x27F6;</p4></a>
                 </a>
             </div>
             <div class="slides-div" id="slide-2">
-                <img src="images/expireminder-card.png" loading="lazy" class="img" id="img2"/>
+                <img src="images/expireminder-card.png" class="img" id="img2"/>
                 <a href="#slider-span2" class="button" id="button-2">
                 <a href="https://github.com/msamanthaf/Expireminder" class="view-project" id="view-button2"><p4 id="view-text2">View &#x27F6;</p4></a>
                 </a>
             </div>
             <div class="slides-div" id="slide-3">
-                <img src="images/dsci-card.png" loading="lazy" class="img" id="img3"/>
+                <img src="images/dsci-card.png" class="img" id="img3"/>
                 <a href="#slider-span3" class="button" id="button-3">
                 <a href="https://github.com/msamanthaf/Ad_Classification_DSCI/blob/main/Final_Project_Ad_Classification.ipynb" class="view-project" id="view-button3"><p4 id="view-text3">View &#x27F6;</p4></a>
                 </a>
             </div>
             <div class="slides-div" id="slide-4">
-                <img src="images/gamejam-card.png" loading="lazy" class="img" id="img4"/>
+                <img src="images/gamejam-card.png" class="img" id="img4"/>
                 <a href="#slider-span4" class="button" id="button-4">
                 <a href="https://imaginary-grass.itch.io/mars-needs-gums" class="view-project" id="view-button4"><p4 id="view-text4">View &#x27F6;</p4></a>
                 </a>
             </div>
             <div class="slides-div" id="slide-5">
-                <img src="images/seamptoms-card.png" loading="lazy"class="img" id="img5"/>
+                <img src="images/seamptoms-card.png" class="img" id="img5"/>
                 <a href="#slider-span5" class="button" id="button-5">
                 <a href="https://devpost.com/software/sea-mptoms" class="view-project" id="view-button5"><p4 id="view-text5">View &#x27F6;</p4></a>
                 </a>
