@@ -148,10 +148,20 @@ const Web = () => {
         </div>
         <div class="screen-body-item">
         <form ref={form} onSubmit={sendEmail}>
-            <input type="text" name="from_name" placeholder='NAME'/>
-            <input type="email" name="from_email" placeholder='EMAIL'/>
-            <textarea name="message" placeholder='MESSAGE'/>
-            <input type="submit" value="Send" />
+            <div class="name">
+                <img src="" class="fas fa-user"/>
+                <input id="name" type="text" name="from_name" placeholder='NAME'/>
+            </div>
+            <div class="email">
+                <img src="" class="fas fa-envelope"/>
+                <input id="email" type="email" name="from_email" placeholder='EMAIL'/>
+            </div>
+            <div class="message-box">
+                <textarea id="msg" name="message" placeholder='MESSAGE'/>
+            </div>
+            <div class="sendbutton">
+                <input type="submit" value="Send" />
+            </div>
         </form>
           </div>
         </div>

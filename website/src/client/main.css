@@ -557,6 +557,7 @@ button {
   flex: 1;
   padding: 50px;
   height: 500px;
+  margin-top: -100px;
 }
 
 .screen-body-item.left {
@@ -658,6 +659,107 @@ button {
   font-weight: 100;
   margin-left: 40px;
   transition: 0.5s; 
+}
+
+.box{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.name{
+  position: relative;
+}
+.name img{
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+}
+.name input{
+  width: 90%;
+  height: 20px;
+  padding: 20px 60px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: #eee;
+  border-radius: 20px;
+}
+.name input::placeholder{
+  font-weight: 500;
+  font-size: 15px;
+  color: #999;
+}
+.email{
+  width: 100%;
+  height: 100px;
+  position: relative;
+}
+.email img{
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #bbb;
+}
+.email input{
+  position: absolute;
+  width: 90%;
+  height: 20px;
+  padding: 20px 60px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: #eee;
+  border-radius: 20px;
+}
+.email input::placeholder{
+  color: #999;
+  font-weight: 500;
+  font-size: 15px;
+}
+.message-box{
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+.message-box img{
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #999;
+}
+.message-box textarea{
+  width: 90%;
+  height: 200px;
+  padding: 20px 60px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: #eee;
+  border-radius: 20px;
+  resize: none;
+}
+.message-box textarea::placeholder{
+  color: #999;
+  font-weight: 500;
+}
+.message{
+  width: 100%;
+  position: relative;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+}
+.sendbutton{
+  position: relative;
+  margin-top: -120px;
+  left: 250px;
 }
 
 #slider-span1:target ~ .image-slider #img1,
