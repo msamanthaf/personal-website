@@ -25,23 +25,23 @@ const Web = () => {
     emailjs.sendForm('service_shhbcfn', 'template_x77yj7w', form.current, 'M86Es1_k8sAEkTlH8')
       .then((result) => {
         gsap.timeline()
-      .to('.icon svg', 0.4, {
-        x: -8,
-        y: 8,
-        transition: 'none'
-      })
-      .to('.icon svg', 0.4, {
-        x: '50vw',
-        y: '-50vh',
-      })
-      .set('.icon svg', {
-        x: '-50vw',
-        y: '50vh'
-      })
-      .to('.icon svg', 0.3, {
-        x: 0,
-        y: 0
-      });
+        .to('.icon svg', 0.4, {
+          x: -8,
+          y: 8,
+          transition: 'none'
+        })
+        .to('.icon svg', 0.4, {
+          x: '50vw',
+          y: '-50vh',
+        })
+        .set('.icon svg', {
+          x: '-50vw',
+          y: '50vh'
+        })
+        .to('.icon svg', 0.3, {
+          x: 0,
+          y: 0
+        });
         alert("Message sent successfully!");
         form.current.reset();
       }, (error) => {
