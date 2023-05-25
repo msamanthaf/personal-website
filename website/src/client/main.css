@@ -422,7 +422,7 @@ section#contact{
 
 #contactdesc{
   margin-top: 30px;
-  font-size: 12px;
+  font-size: 13px;
   font-family: 'Poppins', sans-serif;
   font-weight: 100;
   color: #454545;
@@ -488,7 +488,7 @@ button {
 
 .contact-icons{
   position: absolute;
-  top: 215px;
+  top: 200px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -911,13 +911,48 @@ svg {
   border-radius: 6px;
 }
 
+@media screen and (max-width: 1120px) {
+  .app-contact{
+    margin-top: 10px;
+  }
+}
+
 @media screen and (max-width: 850px) {
+  .app-title span{
+    font-size: 15px;
+  }
+
+  #contactdesc{
+    width: 96%;
+  }
+
   .sendbutton{
     left: 50%;
   }
   
   .send{
     font-size: 13px;
+  }
+
+  .screen-body-item.left{
+    margin-left: -10px;
+  }
+
+  .screen-body-item form{
+    width: 120%;
+  }
+
+  .screen-body-item{
+    margin-left: -70px;
+  }
+
+  .app-contact{
+    font-size: 11.5px;
+    margin-top: 17px;
+  }
+
+  .contact-icons{
+    margin-top: -15px;
   }
 }
 
@@ -1015,6 +1050,39 @@ svg {
   #slider-span1, #slider-span2, #slider-span3, #slider-span4, #slider-span5{
     margin-top: -350%;
   }
+
+  .screen-body{
+    flex-direction: column;
+  }
+
+  .screen{
+    height: fit-content;
+  }
+
+  .screen-body-item{
+    margin-top: -180px;
+    margin-left: 10px;
+  }
+
+  .screen-body-item.left{
+    margin-left: 1%;
+  }
+
+  .sendbutton{
+    margin-left: -15%;
+  }
+
+  .text-box h1,.text-box h2,.text-box h3{
+    font-size: 50px;
+  }
+
+  #contactdesc{
+    font-size: 12.9px;
+  }
+
+  .contact-icons{
+    margin-top: -33px;
+  }
 }
 
 @media screen and (max-width: 680px) {
@@ -1074,36 +1142,10 @@ svg {
   }
 }
 
-
-@media screen and (max-width: 700px) {
-  .screen-body{
-    flex-direction: column;
-  }
-
-  .screen{
-    height: fit-content;
-  }
-
-  .screen-body-item{
-    margin-top: -180px;
-    margin-left: 10px;
-  }
-
-  .screen-body-item.left{
-    margin-left: 1%;
-  }
-
-  .sendbutton{
-    margin-left: -15%;
-  }
-
-  .text-box h1,.text-box h2,.text-box h3{
-    font-size: 50px;
-  }
-
-  #contactdesc{
-    font-size: 12.9px;
-  }
+@media screen and (max-width: 580px) {
+  .contact-icons{
+    margin-top: -15px;
+  } 
 }
 
 @media screen and (max-width: 500px) {
@@ -1131,6 +1173,12 @@ svg {
   }
 }
 
+@media screen and (max-width: 456px) {
+  .contact-icons{
+    margin-top: 10px;
+  }
+}
+
 @media screen and (max-width: 430px) {
   .app-title span{
     font-size: 18px;
@@ -1143,7 +1191,7 @@ svg {
   .app-contact{
     position: absolute;
     font-size: 8px;
-    margin-top: 150px;
+    margin-top: 140px;
     margin-left: 20px;
   }
 
@@ -1156,7 +1204,7 @@ svg {
     gap: 10px;
     width: 120px;
     height: auto;
-    margin-top: -3px;
+    margin-top: 0px;
   }
 
   .map iframe{
