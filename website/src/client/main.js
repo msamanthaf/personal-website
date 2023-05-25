@@ -2,6 +2,10 @@ import './main.css';
 import './scroll.js';
 import React, { useRef , useState} from 'react';
 import emailjs from '@emailjs/browser';
+import { gsap } from 'gsap';
+import { CSSPlugin } from 'gsap/CSSPlugin'; // Import the CSSPlugin
+
+gsap.registerPlugin(CSSPlugin); 
 
 const Web = () => {
   const form = useRef();
@@ -20,6 +24,24 @@ const Web = () => {
 
     emailjs.sendForm('service_shhbcfn', 'template_x77yj7w', form.current, 'M86Es1_k8sAEkTlH8')
       .then((result) => {
+        gsap.timeline()
+      .to('.icon svg', 0.4, {
+        x: -8,
+        y: 8,
+        transition: 'none'
+      })
+      .to('.icon svg', 0.4, {
+        x: '50vw',
+        y: '-50vh',
+      })
+      .set('.icon svg', {
+        x: '-50vw',
+        y: '50vh'
+      })
+      .to('.icon svg', 0.3, {
+        x: 0,
+        y: 0
+      });
         alert("Message sent successfully!");
         form.current.reset();
       }, (error) => {
@@ -158,18 +180,22 @@ const Web = () => {
         <div class="screen-body-item">
         <form ref={form} onSubmit={sendEmail}>
             <div class="name">
-                <img src="" class="fas fa-user"/>
+                <img src="images/nameicon.png" loading="lazy"/>
                 <input id="name" type="text" name="from_name" placeholder='NAME'/>
             </div>
             <div class="email">
-                <img src="" class="fas fa-envelope"/>
+                <img src="images/emailicon.png" loading="lazy"/>
                 <input id="email" type="email" name="from_email" placeholder='EMAIL'/>
             </div>
             <div class="message-box">
                 <textarea id="msg" name="message" placeholder='MESSAGE'/>
             </div>
             <div class="sendbutton">
-                <input type="submit" value="Send" />
+            <button type="submit" value="Send" class="send">
+              <span class="text">Send</span><span class="icon">
+              <svg viewBox="0 0 512.005 512.005">
+              <path d="M511.658 51.675c2.496-11.619-8.895-21.416-20.007-17.176l-482 184a15 15 0 00-.054 28.006L145 298.8v164.713a15 15 0 0028.396 6.75l56.001-111.128 136.664 101.423c8.313 6.17 20.262 2.246 23.287-7.669C516.947 34.532 511.431 52.726 511.658 51.675zm-118.981 52.718L157.874 271.612 56.846 232.594zM175 296.245l204.668-145.757c-176.114 185.79-166.916 176.011-167.684 177.045-1.141 1.535 1.985-4.448-36.984 72.882zm191.858 127.546l-120.296-89.276 217.511-229.462z"></path>
+              </svg></span></button>
             </div>
         </form>
           </div>

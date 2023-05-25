@@ -668,43 +668,54 @@ button {
   justify-content: center;
   align-items: center;
 }
+
 .name{
   position: relative;
 }
+
 .name img{
   position: absolute;
-  top: 50%;
-  left: 30px;
+  top: 105px;
+  left: 25px;
   transform: translateY(-50%);
+  width: 15px;
+  height: auto;
 }
+
 .name input{
   width: 90%;
   height: 20px;
   padding: 20px 60px;
   border: none;
   outline: none;
-  font-size: 18px;
+  font-size: 15px;
   background-color: #eee;
   border-radius: 20px;
 }
+
 .name input::placeholder{
   font-weight: 500;
-  font-size: 15px;
+  font-size: 13px;
   color: #999;
 }
+
 .email{
   width: 100%;
   height: 100px;
   position: relative;
 }
+
 .email img{
+  z-index: 10;
   position: absolute;
-  top: 50%;
-  left: 30px;
+  top: 21px;
+  left: 24px;
   transform: translateY(-50%);
-  font-size: 20px;
+  width: 18px;
+  height: auto;
   color: #bbb;
 }
+
 .email input{
   position: absolute;
   width: 90%;
@@ -712,20 +723,23 @@ button {
   padding: 20px 60px;
   border: none;
   outline: none;
-  font-size: 18px;
+  font-size: 15px;
   background-color: #eee;
   border-radius: 20px;
 }
+
 .email input::placeholder{
   color: #999;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 13px;
 }
+
 .message-box{
   width: 100%;
   position: relative;
   margin-bottom: 15px;
 }
+
 .message-box img{
   position: absolute;
   top: 50%;
@@ -734,21 +748,25 @@ button {
   font-size: 20px;
   color: #999;
 }
+
 .message-box textarea{
   width: 90%;
   height: 200px;
   padding: 20px 60px;
   border: none;
   outline: none;
-  font-size: 18px;
+  font-size: 15px;
   background-color: #eee;
   border-radius: 20px;
   resize: none;
 }
+
 .message-box textarea::placeholder{
   color: #999;
   font-weight: 500;
+  font-size: 15px;
 }
+
 .message{
   width: 100%;
   position: relative;
@@ -756,10 +774,61 @@ button {
   display: flex;
   justify-content: center;
 }
+
 .sendbutton{
   position: relative;
-  margin-top: -120px;
-  left: 80%;
+  margin-top: -115px;
+  left: 75%;
+}
+
+.send {
+	position: relative;
+	display: flex;
+	align-items: center;
+	color: #4d4d4f ;
+	background: transparent;
+	border: none;
+	font-family: inherit;
+	border-radius: 3rem;
+	font-size: 15px;
+	font-variation-settings: 'wght' 500;
+	cursor: pointer;
+	transition: transform 0.4s ease-out;
+  top: 60px;
+  left: -50px;
+	&:hover {
+		.icon svg {
+			transform: translate(-5px, 5px);
+		}
+    color: #656565;
+	}
+	box-shadow: 9px 9px 16px 0px #a3b1c6, -9px -9px 16px 0px rgba(#fff, 0.6);
+}
+
+.text {
+	height: 4.5rem;
+padding: 1rem 1rem 1rem 2rem;
+}
+
+.icon {
+	display: block;
+	padding: 1rem;
+	box-shadow: 9px 9px 16px 0px #a3b1c6, -9px -9px 16px 0px rgba(#fff, 0.6);
+	border-radius: 50%;
+	width: 3.5rem;
+	height: 3.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  margin-left: -20px;
+  margin-top: -20px;
+}
+
+svg {
+	fill: currentColor;
+	width: 2rem;
+	height: 2rem;
+	transition: transform 0.4s ease-out;
 }
 
 #slider-span1:target ~ .image-slider #img1,
