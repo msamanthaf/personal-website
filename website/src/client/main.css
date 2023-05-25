@@ -229,7 +229,7 @@ section#profile{
   display: flex;
   flex-direction: column;
   background: linear-gradient(#141d26, #353C51);
-  height: 100vh;
+  height: fit-content;
 }
 
 section#portfolio{
@@ -421,6 +421,16 @@ section#contact{
   font-size: 23px;
   align-self: center;
   margin-top: 5px;
+}
+
+.currentwork #head{
+  width: 600px;
+  height: 70px;
+}
+
+.next #head{
+  width: 500px;
+  height: 60px;
 }
 
 .subheading p3{
