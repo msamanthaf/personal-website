@@ -3,6 +3,20 @@ function init() {
     let navLinks = document.querySelectorAll('nav a');
     let header = document.querySelector('header');
 
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        console. log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else{
+            entry.target.classList.remove('show');
+        }
+      });
+    });
+    
+    const fadeElements = document.querySelectorAll('.fade');
+    fadeElements.forEach((el) => obs.observe(el));
+
     window.onscroll = () => {
       sections.forEach(sec => {
         let top = window.scrollY;
@@ -68,20 +82,6 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
-
-const obs = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    console. log(entry)
-    if (entry.isIntersecting) {
-        entry.target.classList.add('show');
-    } else{
-        entry.target.classList.remove('show');
-    }
-  });
-});
-
-const fadeElements = document.querySelectorAll('.fade');
-fadeElements.forEach((el) => obs.observe(el));
 }
   
 window.onload = () => {
