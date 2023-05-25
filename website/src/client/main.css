@@ -371,6 +371,7 @@ section#contact{
   width: 100vw;
   height: 10px;
   position: relative;
+  margin-top: 10px;
   bottom: 0;
 }
 
@@ -386,8 +387,8 @@ section#contact{
 }
 
 .next{
-  margin-top: 300px;
-  top:0;
+  position: absolute;
+  margin-top: -700px;
   width: 100vw;
   height: fit-content;
   align-items: center;
@@ -408,7 +409,18 @@ section#contact{
 
 .subheading{
   top: 0;
-  margin-top: -35%;
+  margin-top: 5%;
+}
+
+.currentwork{
+  margin-top: 500px;
+}
+
+.currentwork p{
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 23px;
+  align-self: center;
+  margin-top: 5px;
 }
 
 .subheading p3{
@@ -447,10 +459,6 @@ section#contact{
   height: 65px;
   z-index: 1;
   margin-bottom: -9%;
-}
-
-.subheading{
-  margin-top: -20%;
 }
 
 *, *:before, *:after {
@@ -829,6 +837,13 @@ svg {
 	width: 2rem;
 	height: 2rem;
 	transition: transform 0.4s ease-out;
+}
+
+.currentwork{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 #slider-span1:target ~ .image-slider #img1,
