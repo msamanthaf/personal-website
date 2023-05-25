@@ -752,7 +752,7 @@ button {
 .message-box textarea{
   width: 90%;
   height: 200px;
-  padding: 20px 60px;
+  padding: 20px 30px;
   border: none;
   outline: none;
   font-size: 15px;
@@ -778,7 +778,7 @@ button {
 .sendbutton{
   position: relative;
   margin-top: -115px;
-  left: 75%;
+  left: 70%;
 }
 
 .send {
@@ -909,6 +909,16 @@ svg {
 ::-webkit-scrollbar-thumb:hover{
   background:linear-gradient(transparent, #859eb6, #2b3c4e);
   border-radius: 6px;
+}
+
+@media screen and (max-width: 850px) {
+  .sendbutton{
+    left: 50%;
+  }
+  
+  .send{
+    font-size: 13px;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -1064,9 +1074,35 @@ svg {
   }
 }
 
-@media screen and (max-width: 545px) {
+
+@media screen and (max-width: 700px) {
+  .screen-body{
+    flex-direction: column;
+  }
+
+  .screen{
+    height: fit-content;
+  }
+
+  .screen-body-item{
+    margin-top: -180px;
+    margin-left: 10px;
+  }
+
+  .screen-body-item.left{
+    margin-left: 1%;
+  }
+
+  .sendbutton{
+    margin-left: -15%;
+  }
+
   .text-box h1,.text-box h2,.text-box h3{
     font-size: 50px;
+  }
+
+  #contactdesc{
+    font-size: 12.9px;
   }
 }
 
@@ -1091,6 +1127,50 @@ svg {
   }
 
   #jump a{
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .app-title span{
+    font-size: 18px;
+  }
+
+  #contactdesc{
+    font-size: 10px;
+  }
+
+  .app-contact{
+    position: absolute;
+    font-size: 8px;
+    margin-top: 150px;
+    margin-left: 20px;
+  }
+
+  .contact-icons img{
+    width: 10%;
+    height: 10%;
+  }
+
+  .contact-icons{
+    gap: 10px;
+    width: 120px;
+    height: auto;
+    margin-top: -3px;
+  }
+
+  .map iframe{
+    width: 100%;
+    height: auto;
+    margin-top: 120px;
+  }
+
+  .name img, .email img{
+    width: 10%;
+    height: auto;
+  }
+
+  .name input::placeholder, .email input::placeholder, .message-box textarea::placeholder{
     font-size: 10px;
   }
 }

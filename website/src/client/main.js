@@ -1,9 +1,9 @@
 import './main.css';
 import './scroll.js';
-import React, { useRef , useState} from 'react';
+import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { gsap } from 'gsap';
-import { CSSPlugin } from 'gsap/CSSPlugin'; // Import the CSSPlugin
+import { CSSPlugin } from 'gsap/CSSPlugin';
 
 gsap.registerPlugin(CSSPlugin); 
 
