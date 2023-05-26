@@ -138,7 +138,7 @@ const Web = () => {
         </div>
     </div>
   </div>
-    <div class="currentwork hidden">
+    <div class="currentwork fade">
     <img src="images/subheading.png" loading="lazy" id="head"/>
     <p>What I'm currently working on</p>
     </div>
@@ -185,7 +185,7 @@ const Web = () => {
 </section>
 
 <section id="contact">
-<div class="next hidden">
+<div class="next fade">
   <img src="images/subheading.png" id="head"></img>
   <span>What's Next?</span>
 </div>
@@ -210,11 +210,10 @@ const Web = () => {
             <span>Contact Me!</span>
           </div>
           <span id='contactdesc'>Whether it's about codes or cats, feel free to reach out to me! I'm just a message away 😉</span>
-          <div class="app-contact">+1 (236) 308 6163<br/><br/>
+          <div class="app-contact">
           mariesamantha.f@gmail.com <br/><br/>
           Vancouver, BC, Canada</div>
           <div class="contact-icons">
-            <img src="images/phoneicon.png"></img>
             <img src="images/mailicon.png"></img>
             <img src="images/addressicon.png"></img>
           </div>

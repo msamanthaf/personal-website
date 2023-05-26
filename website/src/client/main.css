@@ -1400,11 +1400,13 @@ svg {
     margin-bottom: 50px;
     padding: 0 0;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #cards {
   margin-top: -50px;
-  margin-left: 28vw;
 	list-style: none;
 	display: grid;
 	grid-template-columns: 1fr;
