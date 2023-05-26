@@ -376,7 +376,6 @@ section#contact{
 }
 
 .copyright span{
-  justify-content: right;
   position: absolute;
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
@@ -855,6 +854,157 @@ svg {
   height: 100vh;
 }
 
+:root {
+	--card-height: 500px;
+	--card-margin: 20px;
+	--card-top-offset: 20px;
+	--numcards: 4;
+	--outline-width: 0px;
+}
+
+#card_1 {
+	--index: 1;
+}
+
+#card_2 {
+	--index: 2;
+}
+
+#card_3 {
+	--index: 3;
+}
+
+#card_4 {
+	--index: 4;
+    height: 460px;
+}
+
+.card {
+	position: sticky;
+	top: 0;
+	padding-top: calc(var(--index) * var(--card-top-offset));
+}
+
+@supports (animation-timeline: works) {
+
+	@scroll-timeline cards-element-scrolls-in-body {
+		source: selector(.scrollcontainer);
+		scroll-offsets:
+			/* Start when the start edge touches the top of the scrollport */
+			selector(#cards) start 1,
+			/* End when the start edge touches the start of the scrollport */
+			selector(#cards) start 0
+		;
+		start: selector(#cards) start 1; /* Start when the start edge touches the top of the scrollport */
+		end: selector(#cards) start 0; /* End when the start edge touches the start of the scrollport */
+		time-range: 4s;
+	}
+
+	.card {
+		--index0: calc(var(--index) - 1); /* 0-based index */
+		--reverse-index: calc(var(--numcards) - var(--index0)); /* reverse index */
+		--reverse-index0: calc(var(--reverse-index) - 1); /* 0-based reverse index */
+	}
+	
+	.card_content {
+		transform-origin: 50% 0%;
+		will-change: transform;
+
+		--duration: calc(var(--reverse-index0) * 1s);
+		--delay: calc(var(--index0) * 1s);
+
+		animation: var(--duration) linear scale var(--delay) forwards;
+		animation-timeline: cards-element-scrolls-in-body;
+	}
+
+	@keyframes scale {
+		to {
+			transform:
+				scale(calc(
+					1.1
+					-
+					calc(0.1 * var(--reverse-index))
+				));
+		}
+	}
+}
+
+.scrollcontainer{
+    width: 101vw;
+    height: 100vh;
+    margin-top: -500px;
+    margin-bottom: 50px;
+    padding: 0 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cards {
+  margin-top: -50px;
+	list-style: none;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(var(--numcards), var(--card-height));
+}
+
+.card_content {
+  width: 500px;
+  height: 300px;
+	box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
+	background: rgb(255, 255, 255);
+	color: rgb(10, 5, 7);
+	border-radius: 20px;
+	overflow: hidden;
+
+	display: grid;
+	grid-template-areas: "text img";
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+
+	align-items: stretch;
+}
+
+.card_content div {
+	grid-area: text;
+	width: 80%;
+	place-self: center;
+	text-align: left;
+
+	display: grid;
+	gap: 1em;
+	place-items: start;
+}
+
+.card_content figure {
+	grid-area: img;
+	overflow: hidden;
+}
+
+.card_content figure img {
+	width: 100px ;
+	height: 100px;
+	object-fit: cover;
+}
+
+.card_content h1 {
+	font-weight: 300;
+	font-size: 20px;
+}
+
+.card_content h2 {
+	font-weight: 300;
+	font-size: 20px;
+}
+
+.card_content p {
+	font-family: sans-serif;
+	font-weight: 300;
+	line-height: 1.42;
+  font-size: 20px;
+}
+
 #slider-span1:target ~ .image-slider #img1,
 #slider-span1:target ~.image-slider #button-1,
 #slider-span2:target ~ .image-slider #img2,
@@ -1315,156 +1465,4 @@ svg {
   #jump a{
     font-size: 9px;
   }
-}
-
-:root {
-	--card-height: 500px;
-	--card-margin: 20px;
-	--card-top-offset: 20px;
-	--numcards: 4;
-	--outline-width: 0px;
-}
-
-
-#card_1 {
-	--index: 1;
-}
-
-#card_2 {
-	--index: 2;
-}
-
-#card_3 {
-	--index: 3;
-}
-
-#card_4 {
-	--index: 4;
-    height: 460px;
-}
-
-.card {
-	position: sticky;
-	top: 0;
-	padding-top: calc(var(--index) * var(--card-top-offset));
-}
-
-@supports (animation-timeline: works) {
-
-	@scroll-timeline cards-element-scrolls-in-body {
-		source: selector(.scrollcontainer);
-		scroll-offsets:
-			/* Start when the start edge touches the top of the scrollport */
-			selector(#cards) start 1,
-			/* End when the start edge touches the start of the scrollport */
-			selector(#cards) start 0
-		;
-		start: selector(#cards) start 1; /* Start when the start edge touches the top of the scrollport */
-		end: selector(#cards) start 0; /* End when the start edge touches the start of the scrollport */
-		time-range: 4s;
-	}
-
-	.card {
-		--index0: calc(var(--index) - 1); /* 0-based index */
-		--reverse-index: calc(var(--numcards) - var(--index0)); /* reverse index */
-		--reverse-index0: calc(var(--reverse-index) - 1); /* 0-based reverse index */
-	}
-	
-	.card__content {
-		transform-origin: 50% 0%;
-		will-change: transform;
-
-		--duration: calc(var(--reverse-index0) * 1s);
-		--delay: calc(var(--index0) * 1s);
-
-		animation: var(--duration) linear scale var(--delay) forwards;
-		animation-timeline: cards-element-scrolls-in-body;
-	}
-
-	@keyframes scale {
-		to {
-			transform:
-				scale(calc(
-					1.1
-					-
-					calc(0.1 * var(--reverse-index))
-				));
-		}
-	}
-}
-
-.scrollcontainer{
-    width: 101vw;
-    height: 100vh;
-    margin-top: -500px;
-    margin-bottom: 50px;
-    padding: 0 0;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#cards {
-  margin-top: -50px;
-	list-style: none;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: repeat(var(--numcards), var(--card-height));
-}
-
-.card_content {
-  width: 500px;
-  height: 300px;
-	box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
-	background: rgb(255, 255, 255);
-	color: rgb(10, 5, 7);
-	border-radius: 20px;
-	overflow: hidden;
-
-	display: grid;
-	grid-template-areas: "text img";
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: auto;
-
-	align-items: stretch;
-}
-
-.card_content > div {
-	grid-area: text;
-	width: 80%;
-	place-self: center;
-	text-align: left;
-
-	display: grid;
-	gap: 1em;
-	place-items: start;
-}
-
-.card_content > figure {
-	grid-area: img;
-	overflow: hidden;
-}
-
-.card_content > figure > img {
-	width: 100px ;
-	height: 100px;
-	object-fit: cover;
-}
-
-.card_content h1 {
-	font-weight: 300;
-	font-size: 20px;
-}
-
-.card_content h2 {
-	font-weight: 300;
-	font-size: 20px;
-}
-
-.card_content p {
-	font-family: sans-serif;
-	font-weight: 300;
-	line-height: 1.42;
-  font-size: 20px;
 }

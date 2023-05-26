@@ -43,7 +43,8 @@ const Web = () => {
           x: 0,
           y: 0
         });
-        alert("Message sent successfully!");
+        var textarea = document.getElementById("msg");
+        textarea.placeholder = "Message sent successfully!";
         form.current.reset();
       }, (error) => {
         alert("Error sending message, please try again");
@@ -146,8 +147,8 @@ const Web = () => {
 	<ul id="cards">
 		<li class="card" id="card_1">
 			<div class="card_content">
-					<h2>Card One</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<h2>My undergraduate degree at UBC 🎓</h2>
+					<p>Currently a second year Computer Science major at UBC Vancouver, with a minor in Data Science. Expected graduation (with CO OP): 2027</p>
 				<figure>
 					<img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-1.jpg" alt="Image description"/>
 				</figure>
@@ -155,7 +156,7 @@ const Web = () => {
 		</li>
 		<li class="card" id="card_2">
 			<div class="card_content">
-					<h2>Card Two</h2>
+					<h2>More exciting projects and hackathons! 🏆</h2>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 				<figure>
 					<img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-2.jpg" alt="Image description"/>
@@ -164,7 +165,7 @@ const Web = () => {
 		</li>
 		<li class="card" id="card_3">
 			<div class="card_content">
-					<h2>Card Three</h2>
+					<h2>This website! 🖥️</h2>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 				<figure>
 					<img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-3.jpg" alt="Image description"/>
@@ -173,7 +174,7 @@ const Web = () => {
 		</li>
 		<li class="card" id="card_4">
 			<div class="card_content">
-					<h2>Card Four</h2>
+					<h2>Summer 2024 positions 💼</h2>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 				<figure>
 					<img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-2.jpg" alt="Image description"/>
@@ -248,7 +249,7 @@ const Web = () => {
     </div>
 </div>
 <div class="copyright">
-  <span>©2023 by Marie Samantha F</span>
+  <span style={{textAlign: 'right'}}>©2023 by Marie Samantha Fidelia <br/> Developed with ReactJS and a lot of CSS</span>
 </div>
 </section>
 </div>
