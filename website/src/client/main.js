@@ -3,7 +3,7 @@ import './scroll.js';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { gsap } from 'gsap';
-import { CSSPlugin } from 'gsap/CSSPlugin';
+import { CSSPlugin } from 'gsap/CSSPlugin'; 
 
 gsap.registerPlugin(CSSPlugin); 
 
@@ -24,6 +24,7 @@ const Web = () => {
 
     emailjs.sendForm('service_shhbcfn', 'template_x77yj7w', form.current, 'M86Es1_k8sAEkTlH8')
       .then((result) => {
+        // Plane animation
         gsap.timeline()
         .to('.icon svg', 0.4, {
           x: -8,
@@ -141,6 +142,46 @@ const Web = () => {
     <img src="images/subheading.png" loading="lazy" id="head"/>
     <p>What I'm currently working on</p>
     </div>
+<div class="scrollcontainer">
+	<ul id="cards">
+		<li class="card" id="card_1">
+			<div class="card_content">
+					<h2>Card One</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				<figure>
+					<img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-1.jpg" alt="Image description"/>
+				</figure>
+			</div>
+		</li>
+		<li class="card" id="card_2">
+			<div class="card_content">
+					<h2>Card Two</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				<figure>
+					<img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-2.jpg" alt="Image description"/>
+				</figure>
+			</div>
+		</li>
+		<li class="card" id="card_3">
+			<div class="card_content">
+					<h2>Card Three</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				<figure>
+					<img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-3.jpg" alt="Image description"/>
+				</figure>
+			</div>
+		</li>
+		<li class="card" id="card_4">
+			<div class="card_content">
+					<h2>Card Four</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				<figure>
+					<img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-2.jpg" alt="Image description"/>
+				</figure>
+			</div>
+		</li>
+	</ul>
+</div>
 </section>
 
 <section id="contact">
@@ -171,7 +212,7 @@ const Web = () => {
           <span id='contactdesc'>Whether it's about codes or cats, feel free to reach out to me! I'm just a message away 😉</span>
           <div class="app-contact">+1 (236) 308 6163<br/><br/>
           mariesamantha.f@gmail.com <br/><br/>
-          Vancouver, BC V6T 1Z4, Canada</div>
+          Vancouver, BC, Canada</div>
           <div class="contact-icons">
             <img src="images/phoneicon.png"></img>
             <img src="images/mailicon.png"></img>
