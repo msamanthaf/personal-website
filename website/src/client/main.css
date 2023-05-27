@@ -40,8 +40,8 @@ body{
 .hidden {
   Opacity: 0;
   filter: blur(5px);
-  transform: translateX(-30%);
-  transition: all 1.5s;
+  transform: translateX(30%);
+  transition: all 1s;
 }
 
 .fade {
@@ -386,6 +386,7 @@ section#contact{
 }
 
 .next{
+  margin-top: 50px;
   position: relative;
   width: 100vw;
   height: fit-content;
@@ -411,19 +412,24 @@ section#contact{
 }
 
 .currentwork{
-  margin-top: 500px;
+  margin-top: 350px;
+  height: fit-content;
+  position: relative;
+  align-items: center;
 }
 
-.currentwork p{
+.currentwork .fade p{
   font-family: 'Instrument Sans', sans-serif;
   font-size: 23px;
-  align-self: center;
-  margin-top: 5px;
+  margin-top: -30px;
+  position: relative;
+  margin-left: 140px;
 }
 
-.currentwork #head{
+.currentwork .fade #head{
   width: 600px;
   height: 70px;
+  position: relative;
 }
 
 .next #head{
@@ -851,7 +857,7 @@ svg {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  margin-top: 400px;
 }
 
 :root {
@@ -859,7 +865,7 @@ svg {
 	--card-margin: 20px;
 	--card-top-offset: 20px;
 	--numcards: 4;
-	--outline-width: 0px;
+	--outline-width: 10px;
 }
 
 #card_1 {
@@ -876,7 +882,6 @@ svg {
 
 #card_4 {
 	--index: 4;
-    height: 460px;
 }
 
 .card {
@@ -930,18 +935,20 @@ svg {
 }
 
 .scrollcontainer{
-    width: 101vw;
+    position: relative;
+    width: 100vw;
     height: 100vh;
-    margin-top: -500px;
-    margin-bottom: 50px;
+    margin-top: 100px;
     padding: 0 0;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 33px;
 }
 
 #cards {
+  margin-left: -33px;
   margin-top: -50px;
 	list-style: none;
 	display: grid;

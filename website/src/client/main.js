@@ -139,7 +139,8 @@ const Web = () => {
         </div>
     </div>
   </div>
-    <div class="currentwork fade">
+    <div class="currentwork">
+      <div class="fade">
     <img src="images/subheading.png" loading="lazy" id="head"/>
     <p>What I'm currently working on</p>
     </div>
@@ -182,6 +183,7 @@ const Web = () => {
 			</div>
 		</li>
 	</ul>
+</div>
 </div>
 </section>
 
