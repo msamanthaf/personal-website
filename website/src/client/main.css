@@ -369,7 +369,9 @@ section#contact{
   position: relative;
   display: flex;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  height: 100vh;
 }
 
 .about img{

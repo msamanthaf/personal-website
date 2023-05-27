@@ -95,7 +95,7 @@ const Web = () => {
 </section>
 
 <section id="portfolio">
-<div class="about">
+<div class="about fade">
   <img src="images/Aboutme.png"></img>
 </div>
 <div class="subheading hidden">
