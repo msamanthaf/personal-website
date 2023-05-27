@@ -95,6 +95,9 @@ const Web = () => {
 </section>
 
 <section id="portfolio">
+<div class="about">
+  <img src="images/Aboutme.png"></img>
+</div>
 <div class="subheading hidden">
     <img src="images/subheading.png" loading="lazy" id="head"/>
     <p3>A glimpse of my creations</p3>
@@ -251,7 +254,7 @@ const Web = () => {
     </div>
 </div>
 <div class="copyright">
-  <span style={{textAlign: 'right'}}>©2023 by Marie Samantha Fidelia <br/> Developed with ReactJS and a lot of CSS</span>
+  <span style={{textAlign: 'right'}}>©2023 by Marie Samantha Fidelia <br/> Developed with ReactJS and tons of CSS</span>
 </div>
 </section>
 </div>
