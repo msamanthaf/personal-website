@@ -881,7 +881,7 @@ svg {
 }
 
 :root {
-	--card-height: 85vh;
+	--card-height: 83.3vh;
 	--card-margin: 20px;
 	--card-top-offset: 20px;
 	--numcards: 4;
@@ -969,7 +969,7 @@ svg {
 
 #cards {
   margin-left: -33px;
-  margin-top: -50px;
+  margin-top: -30px;
 	list-style: none;
 	display: grid;
 	grid-template-columns: 1fr;
@@ -1359,6 +1359,16 @@ svg {
 @media screen and (max-width: 550px) {
   .text-box h1,.text-box h2,.text-box h3{
     font-size: 48px;
+  }
+
+  .card_content {
+    width: 300px;
+    height: 180px;
+  }
+
+  .scrollcontainer{
+    margin-left: 15px;
+    width: 105vw;
   }
 }
 
