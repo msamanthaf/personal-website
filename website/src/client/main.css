@@ -184,8 +184,7 @@ section{
 }
 
 .desc {
-  position: absolute;
-  top: 75%;
+  position: relative;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -228,7 +227,7 @@ section{
 section#profile{
   display: flex;
   flex-direction: column;
-  background: linear-gradient(#141d26, #353C51);
+  background: linear-gradient(#141d26, #353C51, #353C51, #353C51);
   height: fit-content;
 }
 
@@ -253,7 +252,7 @@ section#contact{
   z-index: 100;
   gap: 10%;
   width: 100vw;
-  bottom: 0;
+  bottom: 3vh;
   justify-content: center;
   margin-top: -7%;
 }
@@ -340,8 +339,9 @@ section#contact{
 }
 
 #tilt {
-  position: absolute;
+  position: relative;
   margin-left: 10%;
+  margin-top: 22vh;
   z-index: 9;
   display: block;
   height: 300px;
@@ -369,8 +369,7 @@ section#contact{
   position: relative;
   display: flex;
   align-items: center;
-  margin-top: 50px;
-  margin-bottom: 10px;
+  margin-top: 10px;
   height: 100vh;
 }
 
@@ -1269,7 +1268,7 @@ svg {
   }
 
   .text-box h1,.text-box h2,.text-box h3{
-    font-size: 50px;
+    font-size: 70px;
   }
 
   #contactdesc{
@@ -1303,6 +1302,13 @@ svg {
   }
 }
 
+@media screen and (max-width: 650px) {
+.about img{
+  width: 400px;
+  height: auto;
+}
+}
+
 @media screen and (max-width: 600px) {
   .text-box h1,.text-box h2,.text-box h3{
     font-size: 55px;
@@ -1311,7 +1317,7 @@ svg {
   #icons{
     position: absolute;
     flex-direction: row;
-    left: 40vw;
+    left: 43vw;
   }
 
   #icons img, #icons a{
@@ -1344,15 +1350,15 @@ svg {
   } 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   .text-box h1,.text-box h2,.text-box h3{
-    font-size: 46px;
+    font-size: 48px;
   }
 }
 
 @media screen and (max-width: 490px) {
   .text-box h1,.text-box h2,.text-box h3{
-    font-size: 40px;
+    font-size: 45px;
   }
   
   .header-nav a{
@@ -1360,7 +1366,6 @@ svg {
   }
 
   .desc{
-    margin-top: -10%;
     margin-bottom: 10%;
   }
 
@@ -1372,6 +1377,15 @@ svg {
 @media screen and (max-width: 456px) {
   .contact-icons{
     margin-top: 10px;
+  }
+
+  .about img{
+      width: 300px;
+      height: auto;
+  }
+
+  .text-box h1,.text-box h2,.text-box h3{
+    font-size: 40px;
   }
 }
 
@@ -1421,11 +1435,10 @@ svg {
 
 @media screen and (max-width: 400px) {
   .text-box h1,.text-box h2,.text-box h3{
-    font-size: 35px;
+    font-size: 38px;
   }
 
   .desc{
-    margin-top: -10%;
     margin-bottom: 10%;
   }
   
@@ -1467,7 +1480,7 @@ svg {
   }
 
   #tilt{
-    margin-left: 5%;
+    margin-top: 30vh;
   }
 }
 
@@ -1481,10 +1494,15 @@ svg {
   }
 
   #tilt{
+    margin-top: 50vw;
     margin-left: 10%;
   }
 
   #jump a{
     font-size: 9px;
+  }
+
+  .words span{
+    font-size: 10px;
   }
 }

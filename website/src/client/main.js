@@ -92,12 +92,12 @@ const Web = () => {
     <a href='https://www.linkedin.com/in/marie-samantha-fidelia-82a3151b0/'><img src="images/linkedin.png" loading="lazy" className="linkedin" /></a>
     <a href='https://github.com/msamanthaf'><img src="images/github.png" loading="lazy" className="github" /></a>
   </div>
+  <div class="about fade">
+  <img src="images/Aboutme.png"></img>
+</div>
 </section>
 
 <section id="portfolio">
-<div class="about fade">
-  <img src="images/Aboutme.png"></img>
-</div>
 <div class="subheading hidden">
     <img src="images/subheading.png" loading="lazy" id="head"/>
     <p3>A glimpse of my creations</p3>
