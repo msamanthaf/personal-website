@@ -54,7 +54,7 @@ const Web = () => {
   return (
 <div className="main">
 <header>
-<a href='#profile'><img src="images/Icon.png" loading="lazy" className="logo" /></a>
+<a id="iconheader" href='#profile'><img src="images/Icon.png" loading="lazy" className="logo" /></a>
   <nav className="header-nav">
       <a href='#profile' class="active">Profile</a>
       <a href='#portfolio'>Portfolio</a>
@@ -254,7 +254,7 @@ const Web = () => {
     </div>
 </div>
 <div class="copyright">
-  <span style={{textAlign: 'right'}}>©2023 by Marie Samantha Fidelia <br/> Developed with ReactJS and tons of CSS</span>
+  <span style={{textAlign: 'right'}}>©2023 by Marie Samantha Fidelia <br/> Developed with ReactJS and a whole lot of CSS</span>
 </div>
 </section>
 </div>

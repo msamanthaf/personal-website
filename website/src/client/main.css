@@ -58,10 +58,16 @@ body{
 }
 
 .logo {
-  margin-left: 40%;
-  margin-top: 20px;
   height: 8vmin;
   width: 15hmin; 
+}
+
+#iconheader{
+  height: fit-content;
+  width: fit-content; 
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 nav {
@@ -189,6 +195,7 @@ section{
   transform: translate(-50%, -50%);
   width: 100%;
   text-align: center;
+  margin-top: 2vh;
 }
 
 .text-box{
@@ -369,7 +376,7 @@ section#contact{
   position: relative;
   display: flex;
   align-items: center;
-  margin-top: 10px;
+  margin-top: -10vh;
   height: 100vh;
 }
 
@@ -385,7 +392,7 @@ section#contact{
   width: 100vw;
   height: 10px;
   position: relative;
-  margin-top: 20px;
+  margin-top: 5vh;
   bottom: 0;
 }
 
@@ -422,7 +429,6 @@ section#contact{
 
 .subheading{
   top: 0;
-  margin-top: 5%;
 }
 
 .currentwork{
@@ -875,7 +881,7 @@ svg {
 }
 
 :root {
-	--card-height: 500px;
+	--card-height: 85vh;
 	--card-margin: 20px;
 	--card-top-offset: 20px;
 	--numcards: 4;
@@ -973,7 +979,7 @@ svg {
 .card_content {
   width: 500px;
   height: 300px;
-	box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1);
 	background: rgb(255, 255, 255);
 	color: rgb(10, 5, 7);
 	border-radius: 20px;
