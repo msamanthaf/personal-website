@@ -1450,18 +1450,41 @@ svg {
 }
 
 @media screen and (max-width: 400px) {
+  .subheading #head{
+    width: 300px;
+    height: auto;
+  }
+  
+  .subheading p3{
+    font-size: 14px;
+    margin-left: -235px;
+    margin-top: 110px;
+  }
+
+  .fade span{
+    font-size: 14px;
+  }
+
+  .fade #head{
+    width: 300px;
+    height: auto;
+  }
+
+  .currentwork .fade p{
+    font-size: 14px;
+    margin-left: 102px;
+  }
+
+  .currentwork .fade #head{
+    width: 400px;
+    height: auto;
+  }
+
   .text-box h1,.text-box h2,.text-box h3{
     font-size: 38px;
   }
 
   .desc{
-    margin-bottom: 10%;
-  }
-  
-  #head{
-    width: 330px;
-    height: 39px;
-    z-index: 1;
     margin-bottom: 10%;
   }
 
