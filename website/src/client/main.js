@@ -154,37 +154,22 @@ const Web = () => {
 	<ul id="cards">
 		<li class="card" id="card_1">
 			<div class="card_content">
-					<h2>My undergraduate degree at UBC 🎓</h2> 
-				<figure>
-					<img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-1.jpg" alt="Image description"/>
-				</figure>
+            <img/> 
 			</div>
 		</li>
 		<li class="card" id="card_2">
 			<div class="card_content">
-					<h2>More exciting projects and hackathons! 🏆</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-				<figure>
-					<img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-2.jpg" alt="Image description"/>
-				</figure>
+				  <img/>
 			</div>
 		</li>
 		<li class="card" id="card_3">
 			<div class="card_content">
-					<h2>This website! 🖥️</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-				<figure>
-					<img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-3.jpg" alt="Image description"/>
-				</figure>
+          <img/>
 			</div>
 		</li>
 		<li class="card" id="card_4">
 			<div class="card_content">
-					<h2>Summer 2024 positions 💼</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-				<figure>
-					<img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-2.jpg" alt="Image description"/>
-				</figure>
+				  <img/>
 			</div>
 		</li>
 	</ul>

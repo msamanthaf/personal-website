@@ -251,6 +251,7 @@ section#profile{
   height: auto;
   border-radius: 10px;
   margin-left: 30vw;
+  min-width: 300px;
 }
 
 section#portfolio{
@@ -393,7 +394,7 @@ section#contact{
   width: 100vw;
   height: 10px;
   position: relative;
-  margin-top: 5vh;
+  margin-top: 30px;
   bottom: 0;
 }
 
@@ -976,41 +977,6 @@ svg {
 	align-items: stretch;
 }
 
-.card_content div {
-	grid-area: text;
-	width: 80%;
-	place-self: center;
-	text-align: left;
-
-	display: grid;
-	gap: 1em;
-	place-items: start;
-}
-
-.card_content figure {
-	grid-area: img;
-	overflow: hidden;
-}
-
-.card_content figure img {
-	width: 100px;
-	height: 100px;
-	object-fit: cover;
-}
-
-
-.card_content h2 {
-	font-weight: 300;
-	font-size: 20px;
-}
-
-.card_content p {
-	font-family: sans-serif;
-	font-weight: 300;
-	line-height: 1.42;
-  font-size: 20px;
-}
-
 #slider-span1:target ~ .image-slider #img1,
 #slider-span1:target ~.image-slider #button-1,
 #slider-span2:target ~ .image-slider #img2,
@@ -1337,6 +1303,12 @@ svg {
     margin-left: 15px;
     width: 105vw;
   }
+
+  .about img{
+    width: 80vw;
+    height: auto;
+    margin-left: 10vw;
+  }  
 }
 
 @media screen and (max-width: 490px) {
@@ -1506,4 +1478,10 @@ svg {
   .words span{
     font-size: 10px;
   }
+
+  .about img{
+    width: 80vw;
+    height: auto;
+    margin-left: 5vw;
+  }  
 }
