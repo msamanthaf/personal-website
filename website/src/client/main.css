@@ -911,7 +911,7 @@ svg {
 @supports (animation-timeline: works) {
 
 	@scroll-timeline cards-scroll{
-		source: selector(.scrollcontainer);
+		source: selector(body);
 		scroll-offsets:
 			selector(#cards) start 1,
 			selector(#cards) start 0

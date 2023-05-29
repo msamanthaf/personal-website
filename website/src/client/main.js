@@ -241,7 +241,7 @@ const Web = () => {
     </div>
 </div>
 <div class="copyright">
-  <span style={{textAlign: 'right'}}>©2023 by Marie Samantha Fidelia <br/> Developed with ReactJS and a whole lot of CSS</span>
+  <span style={{textAlign: 'right'}}>© 2023 by Marie Samantha Fidelia <br/> Developed with ReactJS and a lot of CSS</span>
 </div>
 </section>
 </div>
