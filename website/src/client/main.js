@@ -83,7 +83,7 @@ const Web = () => {
     <div class="fade">
       <div id="jump">
       <a href='#slider-span1' className="explore">Explore My Projects <span>👇</span></a>
-      <a href='#contact' className="connect">Download Résumé ⤓</a>
+      <a href='https://drive.google.com/file/d/18LWYla920C4FaV_P4nnHr5-viNb-3aoT/view?usp=sharing' className="connect">Download Résumé ⤓</a>
       </div>
     </div>
   </div>
@@ -203,7 +203,7 @@ const Web = () => {
           </div>
           <span id='contactdesc'>Whether it's about codes or cats, feel free to reach out to me! I'm just a message away 😉</span>
           <div class="app-contact">
-          mariesamantha.f@gmail.com <br/><br/>
+          <a href="mailto: mariesamantha.f@gmail.com">mariesamantha.f@gmail.com</a><br/><br/>
           Vancouver, BC, Canada</div>
           <div class="contact-icons">
             <img src="images/mailicon.png"></img>

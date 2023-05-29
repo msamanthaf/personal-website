@@ -628,6 +628,13 @@ button {
   margin-top: 30px;
 }
 
+.app-contact a{
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  color: #888;
+}
+
 .slide-container {
   width: 20vw;
   height: 20vh;
