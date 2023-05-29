@@ -322,12 +322,6 @@ section#contact{
   left: 1px;
 }
 
-#icons .resume{
-  width: 27px;
-  height: 25px;
-  margin-left: -2px;
-}
-
 @keyframes back {
   100%{
     background-position: 0px 1000px;
@@ -1261,7 +1255,7 @@ svg {
   #icons{
     position: absolute;
     flex-direction: row;
-    left: 43vw;
+    left: 45vw;
   }
 
   #icons img, #icons a{
@@ -1276,12 +1270,6 @@ svg {
   }
 
   #icons .linkedin{
-    width: 16px;
-    height: 16px;
-    margin-left: 0px;
-  }
-  
-  #icons .resume{
     width: 16px;
     height: 16px;
     margin-left: 0px;

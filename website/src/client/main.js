@@ -82,13 +82,12 @@ const Web = () => {
     <p2>&lt;Software Sorcerer In The Making/&gt;</p2>
     <div class="fade">
       <div id="jump">
-      <a href='#slider-span1' className="explore">Explore My Projects <span>&#x27F6;</span></a>
-      <a href='#contact' className="connect">Connect With Me 🙌</a>
+      <a href='#slider-span1' className="explore">Explore My Projects <span>👇</span></a>
+      <a href='#contact' className="connect">Download Résumé ⤓</a>
       </div>
     </div>
   </div>
   <div id='icons'>
-    <a href='https://drive.google.com/file/d/18LWYla920C4FaV_P4nnHr5-viNb-3aoT/view?usp=sharing'><img src="images/resumeicon.png" loading="lazy" className="resume" /></a>
     <a href='https://www.linkedin.com/in/marie-samantha-fidelia-82a3151b0/'><img src="images/linkedin.png" loading="lazy" className="linkedin" /></a>
     <a href='https://github.com/msamanthaf'><img src="images/github.png" loading="lazy" className="github" /></a>
   </div>
