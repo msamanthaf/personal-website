@@ -234,8 +234,23 @@ section{
 section#profile{
   display: flex;
   flex-direction: column;
-  background: linear-gradient(#141d26, #353C51, #353C51, #353C51);
+  background: linear-gradient(#141d26, #353C51, #353C51);
   height: fit-content;
+}
+
+.about{
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background-color: #353C51;
+}
+
+.about img{
+  width: 45vw;
+  height: auto;
+  border-radius: 10px;
+  margin-left: 30vw;
 }
 
 section#portfolio{
@@ -372,20 +387,6 @@ section#contact{
   }
 }
 
-.about{
-  position: relative;
-  display: flex;
-  align-items: center;
-  margin-top: -10vh;
-  height: 100vh;
-}
-
-.about img{
-  width: 540px;
-  height: auto;
-  border-radius: 10px;
-}
-
 .copyright{
   display: flex;
   flex-direction: column;
@@ -425,10 +426,6 @@ section#contact{
 .next img{
   position: absolute;
   margin-top: -9%;
-}
-
-.subheading{
-  top: 0;
 }
 
 .currentwork{
@@ -881,7 +878,7 @@ svg {
 }
 
 :root {
-	--card-height: 83.3vh;
+	--card-height: 500px;
 	--card-margin: 20px;
 	--card-top-offset: 20px;
 	--numcards: 4;
@@ -912,16 +909,14 @@ svg {
 
 @supports (animation-timeline: works) {
 
-	@scroll-timeline cards-element-scrolls-in-body {
+	@scroll-timeline cards-scroll{
 		source: selector(.scrollcontainer);
 		scroll-offsets:
-			/* Start when the start edge touches the top of the scrollport */
 			selector(#cards) start 1,
-			/* End when the start edge touches the start of the scrollport */
 			selector(#cards) start 0
 		;
-		start: selector(#cards) start 1; /* Start when the start edge touches the top of the scrollport */
-		end: selector(#cards) start 0; /* End when the start edge touches the start of the scrollport */
+		start: selector(#cards) start 1;
+		end: selector(#cards) start 0; 
 		time-range: 4s;
 	}
 
@@ -939,25 +934,14 @@ svg {
 		--delay: calc(var(--index0) * 1s);
 
 		animation: var(--duration) linear scale var(--delay) forwards;
-		animation-timeline: cards-element-scrolls-in-body;
-	}
-
-	@keyframes scale {
-		to {
-			transform:
-				scale(calc(
-					1.1
-					-
-					calc(0.1 * var(--reverse-index))
-				));
-		}
+		animation-timeline: cards-scroll;
 	}
 }
 
 .scrollcontainer{
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 600px;
     margin-top: 100px;
     padding: 0 0;
     overflow-x: hidden;
@@ -983,7 +967,6 @@ svg {
 	background: rgb(255, 255, 255);
 	color: rgb(10, 5, 7);
 	border-radius: 20px;
-	overflow: hidden;
 
 	display: grid;
 	grid-template-areas: "text img";
@@ -1010,15 +993,11 @@ svg {
 }
 
 .card_content figure img {
-	width: 100px ;
+	width: 100px;
 	height: 100px;
 	object-fit: cover;
 }
 
-.card_content h1 {
-	font-weight: 300;
-	font-size: 20px;
-}
 
 .card_content h2 {
 	font-weight: 300;
@@ -1308,13 +1287,6 @@ svg {
   }
 }
 
-@media screen and (max-width: 650px) {
-.about img{
-  width: 400px;
-  height: auto;
-}
-}
-
 @media screen and (max-width: 600px) {
   .text-box h1,.text-box h2,.text-box h3{
     font-size: 55px;
@@ -1361,11 +1333,6 @@ svg {
     font-size: 48px;
   }
 
-  .card_content {
-    width: 300px;
-    height: 180px;
-  }
-
   .scrollcontainer{
     margin-left: 15px;
     width: 105vw;
@@ -1393,11 +1360,6 @@ svg {
 @media screen and (max-width: 456px) {
   .contact-icons{
     margin-top: 10px;
-  }
-
-  .about img{
-      width: 300px;
-      height: auto;
   }
 
   .text-box h1,.text-box h2,.text-box h3{

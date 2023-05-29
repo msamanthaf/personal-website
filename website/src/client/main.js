@@ -67,11 +67,11 @@ const Web = () => {
   <div class="text-box">
     <div class="text-wrapper">
        <div class="words">
+          <span class="word"></span>
            <span class="word">Hello👋 I'm</span>
            <span class="word">Halo👋 Saya</span>
-           <span class="word">你 好 呀👋 我 是</span>
+           <span class="word">你 好👋 我 是</span>
            <span class="word">Hallo👋 Ich bin</span>
-           <span class="word">Hello👋 I'm</span>
        </div>
     </div>
     <h1>MARIE</h1> 
@@ -92,10 +92,13 @@ const Web = () => {
     <a href='https://www.linkedin.com/in/marie-samantha-fidelia-82a3151b0/'><img src="images/linkedin.png" loading="lazy" className="linkedin" /></a>
     <a href='https://github.com/msamanthaf'><img src="images/github.png" loading="lazy" className="github" /></a>
   </div>
-  <div class="about fade">
+</section>
+
+<div class="about">
+<div class="fade">
   <img src="images/Aboutme.png"></img>
 </div>
-</section>
+</div>
 
 <section id="portfolio">
 <div class="subheading hidden">
@@ -151,8 +154,7 @@ const Web = () => {
 	<ul id="cards">
 		<li class="card" id="card_1">
 			<div class="card_content">
-					<h2>My undergraduate degree at UBC 🎓</h2>
-					<p>Currently a second year Computer Science major at UBC Vancouver, with a minor in Data Science. Expected graduation (with CO OP): 2027</p>
+					<h2>My undergraduate degree at UBC 🎓</h2> 
 				<figure>
 					<img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-1.jpg" alt="Image description"/>
 				</figure>
