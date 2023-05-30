@@ -22,7 +22,12 @@ const Web = () => {
       return;
     }
 
-    emailjs.sendForm('service_shhbcfn', 'template_x77yj7w', form.current, 'M86Es1_k8sAEkTlH8')
+    const config = require('./config.json');
+    const serviceID = config.serviceID;
+    const templateID = config.templateID;
+    const publicKey = config.publicKey;
+
+    emailjs.sendForm(serviceID, templateID, form.current, publicKey)
       .then((result) => {
         // Plane animation
         gsap.timeline()
@@ -49,6 +54,13 @@ const Web = () => {
       }, (error) => {
         alert("Error sending message, please try again");
       });
+  };
+
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = 'Resume.pdf';
+    link.download = 'Resume.pdf';
+    link.click();
   };
 
   return (
@@ -83,7 +95,7 @@ const Web = () => {
     <div class="fade">
       <div id="jump">
       <a href='#slider-span1' className="explore">Explore My Projects <span>👇</span></a>
-      <a href='https://drive.google.com/file/d/18LWYla920C4FaV_P4nnHr5-viNb-3aoT/view?usp=sharing' className="connect">Download Résumé ⤓</a>
+      <a onClick={handleDownload} className="connect">Download Résumé ⤓</a>
       </div>
     </div>
   </div>
