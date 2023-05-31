@@ -4,10 +4,14 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { gsap } from 'gsap';
 import { CSSPlugin } from 'gsap/CSSPlugin'; 
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+
 
 gsap.registerPlugin(CSSPlugin); 
 
 const Web = () => {
+  AOS.init();
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -106,7 +110,7 @@ const Web = () => {
 </section>
 
 <div class="about">
-<div class="fade">
+<div data-aos="flip-up">
   <img src="images/Aboutme.png"></img>
 </div>
 </div>
@@ -162,10 +166,10 @@ const Web = () => {
     <p>What I'm currently working on</p>
     </div>
     <div class="bubbles">
-    <img src="images/bubble1.png" id="bubble1" loading="lazy"/>
-    <img src="images/bubble2.png" id="bubble2" loading="lazy"/>
-    <img src="images/bubble3.png" id="bubble3" loading="lazy"/>
-    <img src="images/bubble4.png" id="bubble4" loading="lazy"/>
+    <div data-aos="fade-up-left"><img src="images/bubble1.png" id="bubble1" loading="lazy"/></div>
+    <div data-aos="fade-up-right"><img src="images/bubble2.png" id="bubble2" loading="lazy"/></div>
+    <div data-aos="fade-up-left"><img src="images/bubble3.png" id="bubble3" loading="lazy"/></div>
+    <div data-aos="fade-up-right"><img src="images/bubble4.png" id="bubble4" loading="lazy"/></div>
     </div>
 </div>
 </section>
