@@ -1210,6 +1210,11 @@ svg {
     height: 16px;
     margin-left: 0px;
   }
+
+  .bubbles img{
+    width: auto;
+    height: 10vh;
+  }
 }
 
 @media screen and (max-width: 580px) {
@@ -1260,6 +1265,23 @@ svg {
 
   .text-box h1,.text-box h2,.text-box h3{
     font-size: 40px;
+  }
+
+  .bubbles img{
+    width: auto;
+    height: 10vh;
+  }
+
+  .bubbles{
+    gap: 50px;
+  }
+
+  #bubble1, #bubble3{
+    margin-left: 100px;
+  }
+  
+  #bubble2, #bubble4{
+    margin-left: -100px;
   }
 }
 
