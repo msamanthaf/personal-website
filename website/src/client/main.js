@@ -95,7 +95,7 @@ const Web = () => {
     <div class="fade">
       <div id="jump">
       <a href='#slider-span1' className="explore">Explore My Projects <span>👇</span></a>
-      <a onClick={handleDownload} className="connect">Download Résumé ⤓</a>
+      <a onClick={handleDownload} className="connect">Download My Résumé ⤓</a>
       </div>
     </div>
   </div>
@@ -161,30 +161,12 @@ const Web = () => {
     <img src="images/subheading.png" loading="lazy" id="head"/>
     <p>What I'm currently working on</p>
     </div>
-<div class="scrollcontainer">
-	<ul id="cards">
-		<li class="card" id="card_1">
-			<div class="card_content">
-            <img/> 
-			</div>
-		</li>
-		<li class="card" id="card_2">
-			<div class="card_content">
-				  <img/>
-			</div>
-		</li>
-		<li class="card" id="card_3">
-			<div class="card_content">
-          <img/>
-			</div>
-		</li>
-		<li class="card" id="card_4">
-			<div class="card_content">
-				  <img/>
-			</div>
-		</li>
-	</ul>
-</div>
+    <div class="bubbles">
+    <img src="images/bubble1.png" id="bubble1" loading="lazy"/>
+    <img src="images/bubble2.png" id="bubble2" loading="lazy"/>
+    <img src="images/bubble3.png" id="bubble3" loading="lazy"/>
+    <img src="images/bubble4.png" id="bubble4" loading="lazy"/>
+    </div>
 </div>
 </section>
 
