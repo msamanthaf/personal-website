@@ -1301,6 +1301,10 @@ svg {
     margin-left: 20px;
   }
 
+  .app-contact a{
+    font-size: 8px;
+  }
+
   .contact-icons img{
     width: 10%;
     height: 10%;
@@ -1319,8 +1323,13 @@ svg {
     margin-top: 120px;
   }
 
-  .name img, .email img{
+  .email img{
     width: 10%;
+    height: auto;
+  }
+
+  .name img{
+    width: 9%;
     height: auto;
   }
 
