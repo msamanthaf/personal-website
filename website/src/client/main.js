@@ -67,7 +67,7 @@ const Web = () => {
     link.click();
   };
 
-  return (
+return (
 <div className="main">
 <header>
 <a id="iconheader" href='#profile'><img src="images/Icon.png" loading="lazy" className="logo" /></a>
