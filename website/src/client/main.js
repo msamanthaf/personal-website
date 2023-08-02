@@ -63,8 +63,8 @@ const Web = () => {
 
 	const handleDownload = () => {
 		const link = document.createElement("a");
-		link.href = "Resume.pdf";
-		link.download = "Resume.pdf";
+		link.href = "Resume_Marie_Samantha.pdf";
+		link.download = "Resume_Marie_Samantha.pdf";
 		link.click();
 	};
 
