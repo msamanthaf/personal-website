@@ -226,7 +226,7 @@ const Web = () => {
 									id="button-4"
 								>
 									<a
-										href="https://imaginary-grass.itch.io/mars-needs-gums"
+										href="https://github.com/msamanthaf/game-jam"
 										class="view-project"
 										id="view-button4"
 									>
