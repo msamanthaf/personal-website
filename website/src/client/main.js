@@ -63,8 +63,8 @@ const Web = () => {
 
 	const handleDownload = () => {
 		const link = document.createElement("a");
-		link.href = "Resume_Marie_Samantha.pdf";
-		link.download = "Resume_Marie_Samantha.pdf";
+		link.href = "Resume_Marie_Samantha_Fidelia.pdf";
+		link.download = "Resume_Marie_Samantha_Fidelia.pdf";
 		link.click();
 	};
 
