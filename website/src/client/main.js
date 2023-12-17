@@ -76,6 +76,7 @@ const Web = () => {
 						src="images/Icon.png"
 						loading="lazy"
 						className="logo"
+						alt="logo"
 					/>
 				</a>
 				<nav className="header-nav">
