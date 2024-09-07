@@ -265,38 +265,12 @@ const Web = () => {
 							loading="lazy"
 							id="head"
 						/>
-						<p>What I'm currently working on</p>
+						<p>My Journey</p>
 					</div>
-					<div class="bubbles">
-						<div data-aos="fade-up-left">
-							<img
-								src="images/bubble1.png"
-								id="bubble1"
-								loading="lazy"
-							/>
-						</div>
-						<div data-aos="fade-up-right">
-							<img
-								src="images/bubble2.png"
-								id="bubble2"
-								loading="lazy"
-							/>
-						</div>
-						<div data-aos="fade-up-left">
-							<img
-								src="images/bubble3.png"
-								id="bubble3"
-								loading="lazy"
-							/>
-						</div>
-						<div data-aos="fade-up-right">
-							<img
-								src="images/bubble4.png"
-								id="bubble4"
-								loading="lazy"
-							/>
-						</div>
-					</div>
+					<div>
+					<script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.24/build/spline-viewer.js"></script>
+<spline-viewer url="https://prod.spline.design/EUWk98HiWWcY-eDq/scene.splinecode"></spline-viewer>
+    </div>
 				</div>
 			</section>
 
